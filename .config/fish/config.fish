@@ -47,6 +47,9 @@ end
 #cursor
 set -U fish_cursor_default block
 
+#lazygit-yadm
+alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
+
 #neovim
 alias vim='nvim'
 

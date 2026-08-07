@@ -20,3 +20,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # neovim
 alias vim='nvim'
+
+#lazygit-yadm
+alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
+
