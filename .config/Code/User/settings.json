@@ -54,8 +54,16 @@
   "editor.fontSize": 15,
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.cursorStyle": "block",
-  "antigravity.marketplaceGalleryItemURL": "https://marketplace.visualstudio.com/item",
-  "antigravity.marketplaceExtensionGalleryServiceURL": "https://marketplace.visualstudio.com/_apis/public/gallery",
   "editor.smoothScrolling": true,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  },
   "workbench.colorTheme": "Fleet Dark",
 }
