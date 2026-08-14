@@ -44,9 +44,6 @@ function gparted
     xhost -si:localuser:root >/dev/null 2>&1
 end
 
-#cursor
-set -U fish_cursor_default block
-
 #lazygit-yadm
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
 

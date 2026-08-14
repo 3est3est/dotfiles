@@ -41,7 +41,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "window.menuBarVisibility": "visible",
   "catppuccin.italicKeywords": false,
   "catppuccin.accentColor": "teal",
   "catppuccin.bracketMode": "dimmed",
@@ -51,9 +50,7 @@
   "remote.autoForwardPortsSource": "hybrid",
   "prettier.printWidth": 140,
   "claudeCode.preferredLocation": "panel",
-  "editor.fontSize": 15,
-  "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorStyle": "line",
   "editor.smoothScrolling": true,
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
@@ -65,5 +62,10 @@
     "https://developer.microsoft.com/json-schemas/": true,
     "https://biomejs.dev": true
   },
+  "workbench.browser.searchEngine": "duckduckgo",
+  "workbench.browser.openLocalhostLinks": false,
+  "chat.mcp.gallery.enabled": true,
+  "terminal.integrated.cursorBlinking": true,
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Fleet Dark",
 }

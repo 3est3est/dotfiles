@@ -1,13 +1,13 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "~/Pictures/Logo/berserk.txt",
-        "type": "auto",
+        //"source": "~/Pictures/Logo/berserk.txt",
+        "type": "small",
         "width": 12,
         "padding": {
             "top": 1,
             "right": 1,
-            //"left": 3
+            "left": 2
         }
     },
     "display": {
@@ -70,7 +70,7 @@
             "type": "custom"
         },
         {
-            "key": "│  colors  {#keys}│",
+            "key": "│{#37}  colors  {#keys}│",
             "type": "colors",
             "symbol": "circle"
         },

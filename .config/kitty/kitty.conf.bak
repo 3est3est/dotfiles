@@ -1,0 +1,20 @@
+
+
+background_opacity 0.75
+
+dynamic_background_opacity yes
+
+font_family  JetBrainsMono Nerd Font
+font_size    14
+
+#cursor
+cursor_trail 1
+
+
+
+
+
+# BEGIN_KITTY_THEME
+# Default
+include current-theme.conf
+# END_KITTY_THEME
