@@ -68,4 +68,8 @@
   "terminal.integrated.cursorBlinking": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Fleet Dark",
+  "workbench.activityBar.location": "top",
+  "window.menuBarVisibility": "toggle",
+  "workbench.browser.showInTitleBar": true,
+  "window.commandCenter": false,
 }
