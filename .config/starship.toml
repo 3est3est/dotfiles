@@ -1,4 +1,4 @@
-palette = "ii"
+palette = "noctalia"
 
 # Don't print a new line at the start of the prompt
 add_newline = false
@@ -13,7 +13,7 @@ add_newline = false
 # $character
 # """
 format = """
-$os$username 󰜥 $directory $git_branch$package$nodejs$python$golang$rust$bun$lua$cmake
+$os$username 󰜥 $directory $git_branch $package$nodejs$python$golang$rust$bun$lua$cmake$buf$c$cpp$cobol$conda$crystal$dart$deno$direnv$dotnet$elixir$elm$erlang$fennel$fortran$gleam$gradle$haskell$haxe$java$julia$kotlin$maven$meson$mojo$nim$ocaml$odin$perl$php$pixi$pulumi$purescript$raku$red$rlang$ruby$scala$solidity$spack$swift$vlang$typst$vagrant$xmake$zig$aws$azure$docker_context$gcloud$guix_shell$helm$kubernetes$nix_shell$openstack$terraform
 $character"""
 
 # Replace the "❯" symbol in the prompt with "➜"
@@ -25,42 +25,322 @@ error_symbol = "[   ](bold fg:red)"
 [package]
 symbol = "󰏗 "
 style = "bold fg:black bg:208"
-format = '󰜥 [](bold fg:208)[$symbol$version]($style)[](bold fg:208)'
+format = '[](bold fg:208)[$symbol$version]($style)[](bold fg:208) '
 
 [nodejs]
 symbol = " "
 style = "bold fg:black bg:green"
-format = '󰜥 [](bold fg:green)[$symbol$version]($style)[](bold fg:green)'
+format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
 
 [python]
 symbol = " "
 style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow)'
+format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
 
 [golang]
 symbol = " "
 style = "bold fg:black bg:cyan"
-format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan)'
+format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
 
 [rust]
 symbol = "󱘗 "
 style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red)'
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
 
 [bun]
 symbol = " "
 style = "bold fg:black bg:red"
-format = '󰜥 [](bold fg:red)[$symbol$version]($style)[](bold fg:red)'
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
 
 [lua]
 symbol = " "
 style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue)'
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
 
 [cmake]
 symbol = " "
 style = "bold fg:black bg:magenta"
-format = '[](bold fg:magenta)[$symbol$version]($style)[](bold fg:magenta)'
+format = '[](bold fg:magenta)[$symbol$version]($style)[](bold fg:magenta) '
+
+[buf]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[c]
+symbol = " "
+style = "bold fg:black bg:149"
+format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
+
+[cpp]
+symbol = " "
+style = "bold fg:black bg:149"
+format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
+
+[cobol]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[conda]
+symbol = " "
+style = "bold fg:black bg:green"
+format = '[](bold fg:green)[$symbol$environment]($style)[](bold fg:green) '
+
+[crystal]
+symbol = " "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[dart]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[deno]
+symbol = " "
+style = "bold fg:black bg:green"
+format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
+
+[direnv]
+symbol = " "
+style = "bold fg:black bg:bright-yellow"
+format = '[](bold fg:bright-yellow)[$symbol$loaded]($style)[](bold fg:bright-yellow) '
+
+[dotnet]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[elixir]
+symbol = " "
+style = "bold fg:black bg:purple"
+format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
+
+[elm]
+symbol = " "
+style = "bold fg:black bg:cyan"
+format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
+
+[erlang]
+symbol = " "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[fennel]
+symbol = " "
+style = "bold fg:black bg:green"
+format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
+
+[fortran]
+symbol = " "
+style = "bold fg:black bg:purple"
+format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
+
+[gleam]
+symbol = " "
+style = "bold fg:black bg:#FFAFF3"
+format = '[](bold fg:#FFAFF3)[$symbol$version]($style)[](bold fg:#FFAFF3) '
+
+[gradle]
+symbol = " "
+style = "bold fg:black bg:bright-cyan"
+format = '[](bold fg:bright-cyan)[$symbol$version]($style)[](bold fg:bright-cyan) '
+
+[haskell]
+symbol = " "
+style = "bold fg:black bg:purple"
+format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
+
+[haxe]
+symbol = " "
+style = "bold fg:black bg:202"
+format = '[](bold fg:202)[$symbol$version]($style)[](bold fg:202) '
+
+[java]
+symbol = " "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[julia]
+symbol = " "
+style = "bold fg:black bg:purple"
+format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
+
+[kotlin]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[maven]
+symbol = " "
+style = "bold fg:black bg:bright-cyan"
+format = '[](bold fg:bright-cyan)[$symbol$version]($style)[](bold fg:bright-cyan) '
+
+[meson]
+symbol = "󰔷 "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$project]($style)[](bold fg:blue) '
+
+[mojo]
+symbol = "󰈸 "
+style = "bold fg:black bg:208"
+format = '[](bold fg:208)[$symbol$version]($style)[](bold fg:208) '
+
+[nim]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
+
+[ocaml]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
+
+[odin]
+symbol = "󰟢 "
+style = "bold fg:black bg:bright-blue"
+format = '[](bold fg:bright-blue)[$symbol$version]($style)[](bold fg:bright-blue) '
+
+[perl]
+symbol = " "
+style = "bold fg:black bg:149"
+format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
+
+[php]
+symbol = " "
+style = "bold fg:black bg:147"
+format = '[](bold fg:147)[$symbol$version]($style)[](bold fg:147) '
+
+[pixi]
+symbol = "󰏗 "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
+
+[pulumi]
+symbol = " "
+style = "bold fg:black bg:5"
+format = '[](bold fg:5)[$symbol$stack]($style)[](bold fg:5) '
+
+[purescript]
+symbol = " "
+style = "bold fg:black bg:white"
+format = '[](bold fg:white)[$symbol$version]($style)[](bold fg:white) '
+
+[raku]
+symbol = "󱖊 "
+style = "bold fg:black bg:149"
+format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
+
+[red]
+symbol = "󱍼 "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[rlang]
+symbol = "󰟔 "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[ruby]
+symbol = " "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[scala]
+symbol = " "
+style = "bold fg:black bg:red"
+format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
+
+[solidity]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[spack]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$environment]($style)[](bold fg:blue) '
+
+[swift]
+symbol = " "
+style = "bold fg:black bg:202"
+format = '[](bold fg:202)[$symbol$version]($style)[](bold fg:202) '
+
+[typst]
+symbol = " "
+style = "bold fg:black bg:#0093A7"
+format = '[](bold fg:#0093A7)[$symbol$version]($style)[](bold fg:#0093A7) '
+
+[vagrant]
+symbol = " "
+style = "bold fg:black bg:cyan"
+format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
+
+[vlang]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
+
+[xmake]
+symbol = " "
+style = "bold fg:black bg:green"
+format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
+
+[zig]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
+
+[aws]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$profile]($style)[](bold fg:yellow) '
+
+[azure]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$subscription]($style)[](bold fg:blue) '
+
+[docker_context]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$context]($style)[](bold fg:blue) '
+
+[gcloud]
+symbol = "󱇶 "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$account]($style)[](bold fg:blue) '
+
+[guix_shell]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol]($style)[](bold fg:yellow) '
+
+[helm]
+symbol = " "
+style = "bold fg:black bg:white"
+format = '[](bold fg:white)[$symbol$version]($style)[](bold fg:white) '
+
+[kubernetes]
+symbol = "󱃾 "
+style = "bold fg:black bg:cyan"
+format = '[](bold fg:cyan)[$symbol$context]($style)[](bold fg:cyan) '
+
+[nix_shell]
+symbol = " "
+style = "bold fg:black bg:blue"
+format = '[](bold fg:blue)[$symbol$state]($style)[](bold fg:blue) '
+
+[openstack]
+symbol = " "
+style = "bold fg:black bg:yellow"
+format = '[](bold fg:yellow)[$symbol$cloud]($style)[](bold fg:yellow) '
+
+[terraform]
+symbol = " "
+style = "bold fg:black bg:105"
+format = '[](bold fg:105)[$symbol$workspace]($style)[](bold fg:105) '
 
 [git_branch]
 style = "bg: cyan"
@@ -145,7 +425,7 @@ style = "bold bg:yellow fg:black"
 format = '[](bold fg:yellow)[$symbol]($style)'
 
 [os.symbols]
-CachyOS = " "
+CachyOS = "󰣇 "
 
 # Auto-generated by ii wallpaper theming system
 # Do not edit manually - changes will be overwritten
@@ -178,3 +458,47 @@ bright_blue = '#AFC4D8'
 bright_magenta = '#CDBFD5'
 bright_cyan = '#C0E6E7'
 bright_white = '#E3E2E4'
+
+# >>> NOCTALIA STARSHIP PALETTE >>>
+# Noctalia Starship Palette
+# Generated by Noctalia - do not edit manually
+
+[palettes.noctalia]
+# Standard colors
+blue      = "#dcbce4"
+red       = "#ffb4ab"
+green     = "#a5cce5"
+yellow    = "#bac8d4"
+cyan      = "#bac8d4"
+magenta   = "#a5cce5"
+white     = "#e2e2e4"
+black     = "#41484c"
+
+# Extended palette (Catppuccin-compatible names)
+rosewater = "#bac8d4"
+flamingo  = "#ffb4ab"
+pink      = "#a5cce5"
+mauve     = "#a5cce5"
+maroon    = "#ffb4ab"
+peach     = "#bac8d4"
+teal      = "#bac8d4"
+sky       = "#bac8d4"
+sapphire  = "#dcbce4"
+lavender  = "#a5cce5"
+
+# Text shades
+text      = "#e2e2e4"
+subtext1  = "#e2e2e4"
+subtext0  = "#8b9197"
+
+# Surface shades
+overlay2  = "#8b9197"
+overlay1  = "#8b9197"
+overlay0  = "#41484c"
+surface2  = "#41484c"
+surface1  = "#41484c"
+surface0  = "#000000"
+base      = "#000000"
+mantle    = "#000000"
+crust     = "#000000"
+# <<< NOCTALIA STARSHIP PALETTE <<<
