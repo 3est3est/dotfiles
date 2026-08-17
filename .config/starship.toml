@@ -13,7 +13,7 @@ add_newline = false
 # $character
 # """
 format = """
-$os$username 󰜥 $directory $git_branch $package$nodejs$python$golang$rust$bun$lua$cmake$buf$c$cpp$cobol$conda$crystal$dart$deno$direnv$dotnet$elixir$elm$erlang$fennel$fortran$gleam$gradle$haskell$haxe$java$julia$kotlin$maven$meson$mojo$nim$ocaml$odin$perl$php$pixi$pulumi$purescript$raku$red$rlang$ruby$scala$solidity$spack$swift$vlang$typst$vagrant$xmake$zig$aws$azure$docker_context$gcloud$guix_shell$helm$kubernetes$nix_shell$openstack$terraform
+ $os$username 󰜥 $directory $git_branch $package$nodejs$python$golang$rust$bun$lua$cmake$buf$c$cpp$cobol$conda$crystal$dart$deno$direnv$dotnet$elixir$elm$erlang$fennel$fortran$gleam$gradle$haskell$haxe$java$julia$kotlin$maven$meson$mojo$nim$ocaml$odin$perl$php$pixi$pulumi$purescript$raku$red$rlang$ruby$scala$solidity$spack$swift$vlang$typst$vagrant$xmake$zig$aws$azure$docker_context$gcloud$guix_shell$helm$kubernetes$nix_shell$openstack$terraform
 $character"""
 
 # Replace the "❯" symbol in the prompt with "➜"
@@ -465,38 +465,38 @@ bright_white = '#E3E2E4'
 
 [palettes.noctalia]
 # Standard colors
-blue      = "#dcbce4"
+blue      = "#dfbdd4"
 red       = "#ffb4ab"
-green     = "#a5cce5"
-yellow    = "#bac8d4"
-cyan      = "#bac8d4"
-magenta   = "#a5cce5"
-white     = "#e2e2e4"
-black     = "#41484c"
+green     = "#c0c5e1"
+yellow    = "#c5c6d2"
+cyan      = "#c5c6d2"
+magenta   = "#c0c5e1"
+white     = "#e5e2e4"
+black     = "#46464d"
 
 # Extended palette (Catppuccin-compatible names)
-rosewater = "#bac8d4"
+rosewater = "#c5c6d2"
 flamingo  = "#ffb4ab"
-pink      = "#a5cce5"
-mauve     = "#a5cce5"
+pink      = "#c0c5e1"
+mauve     = "#c0c5e1"
 maroon    = "#ffb4ab"
-peach     = "#bac8d4"
-teal      = "#bac8d4"
-sky       = "#bac8d4"
-sapphire  = "#dcbce4"
-lavender  = "#a5cce5"
+peach     = "#c5c6d2"
+teal      = "#c5c6d2"
+sky       = "#c5c6d2"
+sapphire  = "#dfbdd4"
+lavender  = "#c0c5e1"
 
 # Text shades
-text      = "#e2e2e4"
-subtext1  = "#e2e2e4"
-subtext0  = "#8b9197"
+text      = "#e5e2e4"
+subtext1  = "#e5e2e4"
+subtext0  = "#909097"
 
 # Surface shades
-overlay2  = "#8b9197"
-overlay1  = "#8b9197"
-overlay0  = "#41484c"
-surface2  = "#41484c"
-surface1  = "#41484c"
+overlay2  = "#909097"
+overlay1  = "#909097"
+overlay0  = "#46464d"
+surface2  = "#46464d"
+surface1  = "#46464d"
 surface0  = "#000000"
 base      = "#000000"
 mantle    = "#000000"

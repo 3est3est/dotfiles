@@ -73,4 +73,13 @@
   "workbench.productIconTheme": "fluent-icons",
   "window.customTitleBarVisibility": "never",
   "workbench.colorTheme": "Fleet Dark",
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+  "pgsql.serverGroups": [
+    {
+      "name": "Servers",
+      "id": "785C8550-0010-471E-AF4D-CB6400C768CF",
+      "isDefault": true
+    }
+  ],
 }

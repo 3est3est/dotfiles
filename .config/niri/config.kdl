@@ -288,7 +288,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // https://niri-wm.github.io/niri/Configuration:-Animations
 animations {
     // Uncomment to turn off all animations.
-    // off
+    //off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
@@ -390,7 +390,7 @@ window-rule {
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 20
+    geometry-corner-radius 18
     clip-to-geometry true
 }
 
@@ -716,3 +716,4 @@ Mod+Shift+E { quit; }
 }
 
 include "noctalia.kdl"
+
