@@ -2,7 +2,6 @@
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": true,
-  "window.titleBarStyle": "native",
   "explorer.compactFolders": false,
   "editor.fontLigatures": false,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka', 'Menlo', Consolas, Courier New, spacemono",
@@ -71,7 +70,6 @@
   "workbench.browser.showInTitleBar": true,
   "window.commandCenter": false,
   "workbench.productIconTheme": "fluent-icons",
-  "window.customTitleBarVisibility": "never",
   "workbench.colorTheme": "Fleet Dark",
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
@@ -82,4 +80,13 @@
       "isDefault": true
     }
   ],
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal",
+    "kilo-code.new.agentManager.previousTerminal",
+    "kilo-code.new.agentManager.nextTerminal"
+  ],
+  "kilo-code.new.agentWorkStyle": "unset",
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
 }
