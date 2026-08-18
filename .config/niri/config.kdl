@@ -53,9 +53,9 @@ input {
         // drag false
         // drag-lock
          natural-scroll
-         accel-speed 0.2
+         accel-speed 0.3
          accel-profile "flat"
-         scroll-factor 0.2
+         scroll-factor 0.3
          
         // scroll-method "two-finger"
         // disabled-on-external-mouse
@@ -325,6 +325,16 @@ layer-rule {
   background-effect {
     xray false
     //blur false
+  }
+}
+
+/* Disable blur ONLY on Noctalia bar. */
+layer-rule {
+  match namespace="^noctalia-bar-[^\"]+$"
+
+  background-effect {
+      blur false
+      xray false
   }
 }
 

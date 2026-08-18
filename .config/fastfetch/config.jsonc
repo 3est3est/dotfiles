@@ -41,17 +41,17 @@
             "type": "kernel"
         },
         {
-            "key": "│ {#36} wm      {#keys}│",
+            "key": "│ {#36} pkgs    {#keys}│",
+            "type": "packages",
+            "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
+        },
+        {
+            "key": "│ {#31} wm      {#keys}│",
             "type": "wm"
         },
         {
-            "key": "│ {#31}󰇄 desktop {#keys}│",
+            "key": "│ {#32}󰇄 desktop {#keys}│",
             "type": "de"
-        },
-        {
-            "key": "│ {#32} pkgs    {#keys}│",
-            "type": "flatpak-allges",
-            "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
         },
         {
             "key": "│ {#33} term    {#keys}│",
