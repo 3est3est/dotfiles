@@ -70,7 +70,6 @@
   "workbench.browser.showInTitleBar": true,
   "window.commandCenter": false,
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Fleet Dark",
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
   "pgsql.serverGroups": [
@@ -89,4 +88,5 @@
   "kilo-code.new.agentWorkStyle": "unset",
   "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
+  "workbench.colorTheme": "Fleet Dark",
 }
