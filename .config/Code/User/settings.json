@@ -66,9 +66,6 @@
   "chat.mcp.gallery.enabled": true,
   "terminal.integrated.cursorBlinking": true,
   "workbench.iconTheme": "material-icon-theme",
-  "window.menuBarVisibility": "toggle",
-  "workbench.browser.showInTitleBar": true,
-  "window.commandCenter": false,
   "workbench.productIconTheme": "fluent-icons",
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
@@ -86,7 +83,10 @@
     "kilo-code.new.agentManager.nextTerminal"
   ],
   "kilo-code.new.agentWorkStyle": "unset",
-  "window.customTitleBarVisibility": "never",
-  "window.titleBarStyle": "native",
   "workbench.colorTheme": "Fleet Dark",
+  "workbench.browser.showInTitleBar": true,
+  "window.titleBarStyle": "native",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "window.menuBarVisibility": "toggle",
 }
