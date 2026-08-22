@@ -82,11 +82,12 @@
     "kilo-code.new.agentManager.previousTerminal",
     "kilo-code.new.agentManager.nextTerminal"
   ],
-  "kilo-code.new.agentWorkStyle": "unset",
+  "kilo-code.new.agentWorkStyle": "skipped",
   "workbench.colorTheme": "Fleet Dark",
   "workbench.browser.showInTitleBar": true,
   "window.titleBarStyle": "native",
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
+  "kilo-code.new.showTaskTimeline": true,
 }

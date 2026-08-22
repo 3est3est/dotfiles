@@ -343,11 +343,11 @@ style = "bold fg:black bg:105"
 format = '[](bold fg:105)[$symbol$workspace]($style)[](bold fg:105) '
 
 [git_branch]
-style = "bg: cyan"
+style = "bg: blue"
 symbol = "󰘬"
 truncation_length = 12
 truncation_symbol = ""
-format = "󰜥 [](bold fg:cyan)[$symbol $branch(:$remote_branch)](fg:black bg:cyan)[ ](bold fg:cyan)"
+format = "󰜥 [](bold fg:blue)[$symbol $branch(:$remote_branch)](fg:black bg:blue)[ ](bold fg:blue)"
 
 [git_commit]
 commit_hash_length = 4
@@ -471,8 +471,8 @@ green     = "#b3c5ff"
 yellow    = "#c1c6dd"
 cyan      = "#c1c6dd"
 magenta   = "#b3c5ff"
-white     = "#e2e2e2"
-black     = "#474747"
+white     = "#e3e2e9"
+black     = "#45464f"
 
 # Extended palette (Catppuccin-compatible names)
 rosewater = "#c1c6dd"
@@ -487,16 +487,16 @@ sapphire  = "#e2bbdc"
 lavender  = "#b3c5ff"
 
 # Text shades
-text      = "#e2e2e2"
-subtext1  = "#e2e2e2"
-subtext0  = "#919191"
+text      = "#e3e2e9"
+subtext1  = "#e3e2e9"
+subtext0  = "#8f909a"
 
 # Surface shades
-overlay2  = "#919191"
-overlay1  = "#919191"
-overlay0  = "#474747"
-surface2  = "#474747"
-surface1  = "#474747"
+overlay2  = "#8f909a"
+overlay1  = "#8f909a"
+overlay0  = "#45464f"
+surface2  = "#45464f"
+surface1  = "#45464f"
 surface0  = "#000000"
 base      = "#000000"
 mantle    = "#000000"
