@@ -14,55 +14,55 @@
     },
     "modules": [
         {
-            "key": " {#37}{#keys}",
+            "key": " {#keys}",
             "type": "title",
-            "format": "{user-name}@{host-name}"
+            "format": "{#32}{user-name}{#37}@{#32}{host-name}"
         },
         {
-            "key": " {#31} distro  ",
+            "key": " {#36} Distro  ",
             "type": "os",
             "format": "{2}"
         },
         {
-            "key": " {#32} host    ",
+            "key": " {#36} Host    ",
             "type": "host"
         },
         {
-            "key": " {#33} kernel  ",
+            "key": " {#36} Kernel  ",
             "type": "kernel"
         },
         {
-            "key": " {#34} pkgs    ",
+            "key": " {#36} Pkgs    ",
             "type": "packages",
             "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
         },
         {
-            "key": " {#35} wm      ",
+            "key": " {#36} WM      ",
             "type": "wm"
         },
         {
-            "key": " {#36} cpu     ",
+            "key": " {#36} CPU     ",
             "type": "cpu",
             "format": "{1}"
         },
         {
-            "key": " {#31} term    ",
+            "key": " {#36} Term    ",
             "type": "terminal"
         },
         {
-            "key": " {#32} shell   ",
+            "key": " {#36} Shell   ",
             "type": "shell"
         },
         {
-            "key": " {#33} memory  ",
+            "key": " {#36} Memory  ",
             "type": "memory"
         },
         {
-            "key": " {#34} uptime  ",
+            "key": " {#36} Uptime  ",
             "type": "uptime"
         },
         {
-            "key": " {#37} 󰮯 •••   ",
+            "key": " {#33} 󰮯 {#37}•••   ",
             "type": "custom",
             "format": "{#30}󰊠 {#37}󰊠 {#36}󰊠 {#35}󰊠 {#34}󰊠 {#33}󰊠 {#32}󰊠 {#31}󰊠 "
         },
