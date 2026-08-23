@@ -1,0 +1,6 @@
+// Autostart apps
+// Shell (Noctalia) 
+spawn-sh-at-startup "env LC_TIME=en_US.UTF-8 noctalia"
+
+// System tray
+spawn-at-startup "nm-applet" "--indicator"

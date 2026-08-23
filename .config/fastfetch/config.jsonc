@@ -9,7 +9,7 @@
       "left": 2
     },
     "color": {
-      "1": "green",
+      "1": "blue",
       "2": "cyan"
     }
   },
@@ -25,11 +25,11 @@
     {
       "key": "{#title}",
       "type": "title",
-      "format": "{#title}{user-name}@{host-name}"
+      "format": "{#title}{user-name}{#keys}@{#title}{host-name}"
     },
     {
       "type": "custom",
-      "format": "{#title} ----------------------"
+      "format": "{#keys} ----------------------"
     },
     {
       "key": " {#keys} OS      ",
