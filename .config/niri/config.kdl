@@ -11,14 +11,14 @@ output "eDP-1" {
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 prefer-no-csd
 environment {
-    // บังคับให้ libdecor (ตัววาดแถบหัวข้างบน) ซ่อนแถบออกให้หมดทุกแอป
+    // all libedecot hide all any apps
     LIBDECOR_PLUGIN "dummy"
     
-    // บังคับ GTK และ Qt ไม่ให้สร้าง Titlebar เอง
+    // GTK and Qt dont make titlebars
     GTK_CSD "0"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 
-    // บังคับให้วันที่บน bar เป็นภาษาอังกฤษ
+    // en bar
     LC_TIME "en_US.UTF-8"
 }
 // Input device configuration.
@@ -56,9 +56,9 @@ input {
         // drag false
         // drag-lock
          natural-scroll
-         accel-speed 0.3
-         accel-profile "flat"
-         scroll-factor 0.3
+         //accel-speed 0.3
+         //accel-profile "flat"
+         //scroll-factor 0.3
          
         // scroll-method "two-finger"
         // disabled-on-external-mouse
