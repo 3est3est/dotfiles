@@ -17,6 +17,9 @@ environment {
     // บังคับ GTK และ Qt ไม่ให้สร้าง Titlebar เอง
     GTK_CSD "0"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+
+    // บังคับให้วันที่บน bar เป็นภาษาอังกฤษ
+    LC_TIME "en_US.UTF-8"
 }
 // Input device configuration.
 // Find the full list of options on the wiki:
