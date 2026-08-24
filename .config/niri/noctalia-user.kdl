@@ -48,7 +48,11 @@ layer-rule {
 }
 
 binds {
-    // pugins
+  
+   // noctalia launcher
+   Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    
+   // pugins
     Mod+F1 {spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
 
     // Core Noctalia binds

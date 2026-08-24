@@ -101,7 +101,7 @@ input {
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 10
+    gaps 6
     
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -260,8 +260,6 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
-//spawn-at-startup "waybar"
 
 include "startup.kdl"
 
@@ -296,6 +294,46 @@ animations {
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
+
+    workspace-switch {
+        spring damping-ratio=0.80 stiffness=523 epsilon=0.0001
+    }
+
+    window-open {
+        duration-ms 150
+        curve "ease-out-expo"
+    }
+
+    window-close {
+        duration-ms 150
+        curve "ease-out-quad"
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=0.75 stiffness=323 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=0.85 stiffness=423 epsilon=0.0001
+    }
+
+    config-notification-open-close {
+        spring damping-ratio=0.65 stiffness=923 epsilon=0.001
+    }
+
+    screenshot-ui-open {
+        duration-ms 200
+        curve "ease-out-quad"
+    }
+
+    overview-open-close {
+        spring damping-ratio=0.85 stiffness=800 epsilon=0.0001
+    } 
+
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -311,9 +349,6 @@ window-rule {
   opacity 0.80
 }
 
-/*
-  Noctalia window/layer rules moved to noctalia-user.kdl
-*/
 
 /* You can also fine-tune the blur effect globally. */
 blur {
@@ -359,7 +394,7 @@ window-rule {
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 18
+    geometry-corner-radius 12
     clip-to-geometry true
 }
 
@@ -368,6 +403,17 @@ overview {
     on
   }
 }
+
+// Override to disable super+tab
+recent-windows {
+    binds {
+        Alt+Tab         { next-window scope="output"; }
+        Alt+Shift+Tab   { previous-window scope="output"; }
+        Alt+grave       { next-window filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+    }
+}
+
 
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
@@ -379,10 +425,7 @@ binds {
     //
     // Most actions that you can bind here can also be invoked programmatically with
     // `niri msg action do-something`.
-    // pugins
-    // Noctalia binds moved to noctalia-user.kdl
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-
+    
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
