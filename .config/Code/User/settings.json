@@ -87,7 +87,8 @@
   "workbench.browser.showInTitleBar": true,
   "window.titleBarStyle": "native",
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
   "kilo-code.new.showTaskTimeline": true,
+  "workbench.activityBar.location": "top",
+  "window.customTitleBarVisibility": "never",
 }
