@@ -91,4 +91,5 @@
   "kilo-code.new.showTaskTimeline": true,
   "workbench.activityBar.location": "top",
   "window.customTitleBarVisibility": "never",
+  "kilo-code.new.autocomplete.enableAutoTrigger": false,
 }

@@ -58,7 +58,7 @@ input {
          natural-scroll
          //accel-speed 0.3
          //accel-profile "flat"
-         //scroll-factor 0.3
+         scroll-factor 0.3
          
         // scroll-method "two-finger"
         // disabled-on-external-mouse
@@ -346,7 +346,7 @@ window-rule {
     blur true
     xray false
   }
-  opacity 0.80
+  opacity 0.90
 }
 
 
