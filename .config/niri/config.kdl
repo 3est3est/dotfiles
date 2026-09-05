@@ -101,7 +101,7 @@ input {
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 4
     
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -189,11 +189,11 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-
+        //off
         width 0.1
         active-color "#7fc8ff"
         inactive-color "#505050"
-
+        
         // Color of the border around windows that request your attention.
         // urgent-color "#9b0000"
 
@@ -201,7 +201,7 @@ layout {
         // For example, this is a pastel rainbow gradient via in="oklch longer hue".
         //
         // active-gradient from="#e5989b" to="#ffb4a2" angle=45 relative-to="workspace-view" in="oklch longer hue"
-
+        
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
@@ -290,7 +290,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // https://niri-wm.github.io/niri/Configuration:-Animations
 animations {
     // Uncomment to turn off all animations.
-    //off
+   // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
     // slowdown 3.0
@@ -346,7 +346,7 @@ window-rule {
     blur true
     xray false
   }
-  opacity 0.90
+  opacity 0.85
 }
 
 

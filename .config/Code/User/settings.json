@@ -50,7 +50,6 @@
   "prettier.printWidth": 140,
   "claudeCode.preferredLocation": "panel",
   "terminal.integrated.cursorStyle": "line",
-  "editor.smoothScrolling": true,
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
@@ -83,7 +82,6 @@
     "kilo-code.new.agentManager.nextTerminal"
   ],
   "kilo-code.new.agentWorkStyle": "skipped",
-  "workbench.colorTheme": "Fleet Dark",
   "workbench.browser.showInTitleBar": true,
   "window.titleBarStyle": "native",
   "window.commandCenter": false,
@@ -92,4 +90,9 @@
   "workbench.activityBar.location": "top",
   "window.customTitleBarVisibility": "never",
   "kilo-code.new.autocomplete.enableAutoTrigger": false,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "notebook.output.scrolling": true,
+  "workbench.colorTheme": "Fleet Dark",
 }
