@@ -190,7 +190,7 @@ layout {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
         //off
-        width 0.1
+        width 0.01
         active-color "#7fc8ff"
         inactive-color "#505050"
         
@@ -208,7 +208,7 @@ layout {
     // You can enable drop shadows for windows.
     shadow {
         // Uncomment the next line to enable shadows.
-        // on
+         on
 
         // By default, the shadow draws only around its window, and not behind it.
         // Uncomment this setting to make the shadow draw behind its window.
@@ -346,37 +346,18 @@ window-rule {
     blur true
     xray false
   }
-  opacity 0.85
+  opacity 0.80
 }
 
 
 /* You can also fine-tune the blur effect globally. */
 blur {
-  passes 2        // more passes = stronger blur (default: 3)
+  passes 3        // more passes = stronger blur (default: 3)
   offset 3.0      // sample distance per pass (default: 3.0)
-  noise 0.03      // grain overlay (default: 0.02)
-  saturation 1.0  // color saturation boost (default: 1.5)
+  noise 0.02      // grain overlay (default: 0.02)
+  saturation 1.5  // color saturation boost (default: 1.5)
 }
 
-
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
-window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-// Open the Firefox picture-in-picture player as floating by default.
-window-rule {
-    // This app-id regular expression will work for both:
-    // - host Firefox (app-id is "firefox")
-    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
@@ -403,8 +384,6 @@ overview {
     on
   }
 }
-
-
 
 
 binds {

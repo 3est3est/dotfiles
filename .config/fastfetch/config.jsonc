@@ -45,6 +45,11 @@
       "type": "kernel"
     },
     {
+      "key": " {#keys} CPU     ",
+      "type": "cpu",
+      "format": "{1}"
+    },
+    {
       "key": " {#keys} Pkgs    ",
       "type": "packages",
       "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
@@ -52,11 +57,6 @@
     {
       "key": " {#keys} WM      ",
       "type": "wm"
-    },
-    {
-      "key": " {#keys} CPU     ",
-      "type": "cpu",
-      "format": "{1}"
     },
     {
       "key": " {#keys} Term    ",
