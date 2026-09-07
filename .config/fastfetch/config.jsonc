@@ -45,11 +45,6 @@
       "type": "kernel"
     },
     {
-      "key": " {#keys} CPU     ",
-      "type": "cpu",
-      "format": "{1}"
-    },
-    {
       "key": " {#keys} Pkgs    ",
       "type": "packages",
       "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
@@ -66,6 +61,11 @@
       "key": " {#keys} Shell   ",
       "type": "shell"
     },
+    {
+      "key": " {#keys} CPU     ",
+      "type": "cpu",
+      "format": "{1}"
+    },    
     {
       "key": " {#keys} Memory  ",
       "type": "memory"

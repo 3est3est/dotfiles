@@ -67,7 +67,7 @@ binds {
     XF86MonBrightnessUp { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 
-    Mod+D { spawn-sh "noctalia msg dock-toggle"; }
+    Mod+Shift+D { spawn-sh "noctalia msg dock-toggle"; }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: noctalia" { spawn-sh "noctalia msg session lock"; }
     Ctrl+Mod+Alt+R { spawn-sh "noctalia msg config-reload"; }
     Mod+Shift+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
