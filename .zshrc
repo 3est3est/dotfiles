@@ -26,8 +26,8 @@ alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOM
 
 #fastfetch
 alias ff="fastfetch"
-
 #btop
 alias bt="btop"
-
+#yazi
+alias yz="yazi"
 

@@ -57,6 +57,8 @@ alias ls="eza --icons --group-directories-first"
 alias ff="fastfetch"
 #btop
 alias bt="btop"
+#yazi
+alias yz="yazi"
 
 #rustc
 fish_add_path ~/.cargo/bin
