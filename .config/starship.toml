@@ -1,449 +1,319 @@
-
-# Don't print a new line at the start of the prompt
-add_newline = false
-# Pipes ╰─ ╭─
-# Powerline symbols                                     
-# Wedges 🭧🭒 🭣🭧🭓
-# Random noise 🬖🬥🬔🬗
-# Cool stuff 󰜥   
-
-# format = """
-# $cmd_duration$username$hostname $directory $git_branch
-# $character
-# """
+"$schema" = 'https://starship.rs/config-schema.json'
 format = """
- $os$username 󰜥 $directory $git_branch $package$nodejs$python$golang$rust$bun$lua$cmake$buf$c$cpp$cobol$conda$crystal$dart$deno$direnv$dotnet$elixir$elm$erlang$fennel$fortran$gleam$gradle$haskell$haxe$java$julia$kotlin$maven$meson$mojo$nim$ocaml$odin$perl$php$pixi$pulumi$purescript$raku$red$rlang$ruby$scala$solidity$spack$swift$vlang$typst$vagrant$xmake$zig$aws$azure$docker_context$gcloud$guix_shell$helm$kubernetes$nix_shell$openstack$terraform
-$character"""
-palette = "frozen"
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[   ](bold fg:blue)"
-error_symbol = "[   ](bold fg:red)"
-
-# Disable the package module, hiding it from the prompt completely
-[package]
-symbol = "󰏗 "
-style = "bold fg:black bg:208"
-format = '[](bold fg:208)[$symbol$version]($style)[](bold fg:208) '
-
-[nodejs]
-symbol = " "
-style = "bold fg:black bg:green"
-format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
-
-[python]
-symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
-
-[golang]
-symbol = " "
-style = "bold fg:black bg:cyan"
-format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
-
-[rust]
-symbol = "󱘗 "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[bun]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[lua]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[cmake]
-symbol = " "
-style = "bold fg:black bg:magenta"
-format = '[](bold fg:magenta)[$symbol$version]($style)[](bold fg:magenta) '
-
-[buf]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[c]
-symbol = " "
-style = "bold fg:black bg:149"
-format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
-
-[cpp]
-symbol = " "
-style = "bold fg:black bg:149"
-format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
-
-[cobol]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[conda]
-symbol = " "
-style = "bold fg:black bg:green"
-format = '[](bold fg:green)[$symbol$environment]($style)[](bold fg:green) '
-
-[crystal]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[dart]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[deno]
-symbol = " "
-style = "bold fg:black bg:green"
-format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
-
-[direnv]
-symbol = " "
-style = "bold fg:black bg:bright-yellow"
-format = '[](bold fg:bright-yellow)[$symbol$loaded]($style)[](bold fg:bright-yellow) '
-
-[dotnet]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[elixir]
-symbol = " "
-style = "bold fg:black bg:purple"
-format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
-
-[elm]
-symbol = " "
-style = "bold fg:black bg:cyan"
-format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
-
-[erlang]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[fennel]
-symbol = " "
-style = "bold fg:black bg:green"
-format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
-
-[fortran]
-symbol = " "
-style = "bold fg:black bg:purple"
-format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
-
-[gleam]
-symbol = " "
-style = "bold fg:black bg:#FFAFF3"
-format = '[](bold fg:#FFAFF3)[$symbol$version]($style)[](bold fg:#FFAFF3) '
-
-[gradle]
-symbol = " "
-style = "bold fg:black bg:bright-cyan"
-format = '[](bold fg:bright-cyan)[$symbol$version]($style)[](bold fg:bright-cyan) '
-
-[haskell]
-symbol = " "
-style = "bold fg:black bg:purple"
-format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
-
-[haxe]
-symbol = " "
-style = "bold fg:black bg:202"
-format = '[](bold fg:202)[$symbol$version]($style)[](bold fg:202) '
-
-[java]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[julia]
-symbol = " "
-style = "bold fg:black bg:purple"
-format = '[](bold fg:purple)[$symbol$version]($style)[](bold fg:purple) '
-
-[kotlin]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[maven]
-symbol = " "
-style = "bold fg:black bg:bright-cyan"
-format = '[](bold fg:bright-cyan)[$symbol$version]($style)[](bold fg:bright-cyan) '
-
-[meson]
-symbol = "󰔷 "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$project]($style)[](bold fg:blue) '
-
-[mojo]
-symbol = "󰈸 "
-style = "bold fg:black bg:208"
-format = '[](bold fg:208)[$symbol$version]($style)[](bold fg:208) '
-
-[nim]
-symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
-
-[ocaml]
-symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
-
-[odin]
-symbol = "󰟢 "
-style = "bold fg:black bg:bright-blue"
-format = '[](bold fg:bright-blue)[$symbol$version]($style)[](bold fg:bright-blue) '
-
-[perl]
-symbol = " "
-style = "bold fg:black bg:149"
-format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
-
-[php]
-symbol = " "
-style = "bold fg:black bg:147"
-format = '[](bold fg:147)[$symbol$version]($style)[](bold fg:147) '
-
-[pixi]
-symbol = "󰏗 "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
-
-[pulumi]
-symbol = " "
-style = "bold fg:black bg:magenta"
-format = '[](bold fg:magenta)[$symbol$stack]($style)[](bold fg:magenta) '
-
-[purescript]
-symbol = " "
-style = "bold fg:black bg:white"
-format = '[](bold fg:white)[$symbol$version]($style)[](bold fg:white) '
-
-[raku]
-symbol = "󱖊 "
-style = "bold fg:black bg:149"
-format = '[](bold fg:149)[$symbol$version]($style)[](bold fg:149) '
-
-[red]
-symbol = "󱍼 "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[rlang]
-symbol = "󰟔 "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[ruby]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[scala]
-symbol = " "
-style = "bold fg:black bg:red"
-format = '[](bold fg:red)[$symbol$version]($style)[](bold fg:red) '
-
-[solidity]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[spack]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$environment]($style)[](bold fg:blue) '
-
-[swift]
-symbol = " "
-style = "bold fg:black bg:202"
-format = '[](bold fg:202)[$symbol$version]($style)[](bold fg:202) '
-
-[typst]
-symbol = " "
-style = "bold fg:black bg:#0093A7"
-format = '[](bold fg:#0093A7)[$symbol$version]($style)[](bold fg:#0093A7) '
-
-[vagrant]
-symbol = " "
-style = "bold fg:black bg:cyan"
-format = '[](bold fg:cyan)[$symbol$version]($style)[](bold fg:cyan) '
-
-[vlang]
-symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$version]($style)[](bold fg:blue) '
-
-[xmake]
-symbol = " "
-style = "bold fg:black bg:green"
-format = '[](bold fg:green)[$symbol$version]($style)[](bold fg:green) '
-
-[zig]
-symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$version]($style)[](bold fg:yellow) '
+╭─$os$username$hostname$localip$shlvl$singularity$kubernetes$nats$directory$vcsh$fossil_branch$fossil_metrics$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$hg_state$pijul_channel$docker_context$package$bun$c$cmake$cobol$cpp$daml$dart$deno$dotnet$elixir$elm$erlang$fennel$fortran$gleam$golang$gradle$haskell$haxe$helm$java$julia$kotlin$lua$maven$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pulumi$purescript$python$quarto$raku$rlang$red$ruby$rust$scala$solidity$swift$terraform$typst$vlang$vagrant$xmake$zig$buf$guix_shell$nix_shell$conda$pixi$meson$spack$memory_usage$aws$gcloud$openstack$azure$direnv$env_var$mise$crystal$custom$sudo$cmd_duration$line_break$jobs$battery$time$status$container$netns$shell
+╰─$character"""
+add_newline = false
 
 [aws]
 symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$profile]($style)[](bold fg:yellow) '
 
 [azure]
 symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$subscription]($style)[](bold fg:blue) '
+
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+unknown_symbol = "󰂑 "
+empty_symbol = "󰂎 "
+
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmake]
+symbol = " "
+
+[cobol]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[container]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
+
+[direnv]
+symbol = " "
+
+[directory]
+read_only = " 󰌾"
+home_symbol = " ~"
 
 [docker_context]
 symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$context]($style)[](bold fg:blue) '
+
+[dotnet]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[erlang]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fortran]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
 
 [gcloud]
 symbol = "󱇶 "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$account]($style)[](bold fg:blue) '
+
+[gleam]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[gradle]
+symbol = " "
 
 [guix_shell]
 symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol]($style)[](bold fg:yellow) '
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
 
 [helm]
 symbol = " "
-style = "bold fg:black bg:white"
-format = '[](bold fg:white)[$symbol$version]($style)[](bold fg:white) '
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
 
 [kubernetes]
 symbol = "󱃾 "
-style = "bold fg:black bg:cyan"
-format = '[](bold fg:cyan)[$symbol$context]($style)[](bold fg:cyan) '
+
+[lua]
+symbol = " "
+
+[maven]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[mojo]
+symbol = "󰈸 "
+
+[nats]
+symbol = " "
+
+[netns]
+symbol = "󰛳 "
+
+[nim]
+symbol = " "
 
 [nix_shell]
 symbol = " "
-style = "bold fg:black bg:blue"
-format = '[](bold fg:blue)[$symbol$state]($style)[](bold fg:blue) '
+
+[nodejs]
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[odin]
+symbol = "󰟢 "
+
+[opa]
+symbol = " "
 
 [openstack]
 symbol = " "
-style = "bold fg:black bg:yellow"
-format = '[](bold fg:yellow)[$symbol$cloud]($style)[](bold fg:yellow) '
+
+[os.symbols]
+AIX = " "
+AlmaLinux = " "
+Alpaquita = " "
+Alpine = " "
+ALTLinux = " "
+Amazon = " "
+Android = " "
+AOSC = " "
+Arch = " "
+Artix = " "
+Bluefin = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Elementary = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = " "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = " "
+InstantOS = " "
+Ios = "󰀷 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = " "
+OpenCloudOS = " "
+openEuler = " "
+openSUSE = " "
+OracleLinux = "󰺡 "
+PikaOS = " "
+Pop = " "
+Raspbian = " "
+Redhat = "󱄛 "
+RedHatEnterprise = "󱄛 "
+Redox = "󰀘 "
+RockyLinux = " "
+Solus = " "
+SUSE = " "
+Ubuntu = " "
+Ultramarine = " "
+Unknown = " "
+Uos = " "
+Void = " "
+Windows = "󰍲 "
+Zorin = " "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+
+[pulumi]
+symbol = " "
+
+[purescript]
+symbol = " "
+
+[python]
+symbol = " "
+
+[raku]
+symbol = "󱖊 "
+
+[red]
+symbol = "󱍼 "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = "󰹍 "
+
+[singularity]
+symbol = " "
+
+[solidity]
+symbol = " "
+
+[spack]
+symbol = " "
+
+[status]
+symbol = " "
+
+[sudo]
+symbol = " "
+
+[swift]
+symbol = " "
 
 [terraform]
 symbol = " "
-style = "bold fg:black bg:105"
-format = '[](bold fg:105)[$symbol$workspace]($style)[](bold fg:105) '
 
-[git_branch]
-style = "bg:magenta"
-symbol = "󰘬"
-truncation_length = 12
-truncation_symbol = ""
-format = "󰜥 [](bold fg:magenta)[$symbol $branch(:$remote_branch)](fg:black bg:magenta)[](bold fg:magenta) "
+[vlang]
+symbol = " "
 
-[git_commit]
-commit_hash_length = 4
-tag_symbol = " "
+[typst]
+symbol = " "
 
-[git_state]
-format = '[\($state( $progress_current of $progress_total)\)]($style)'
-cherry_pick = "[🍒 PICKING](bold red)"
+[vagrant]
+symbol = " "
 
-[git_status]
-conflicted = " 🏳 "
-ahead = " 🏎💨 "
-behind = " 😰 "
-diverged = " 😵 "
-untracked = " 🤷 ‍"
-stashed = " 📦 "
-modified = " 📝 "
-staged = '[++\($count\)](green)'
-renamed = " ✍️ "
-deleted = " 🗑 "
+[xmake]
+symbol = " "
 
-[hostname]
-ssh_only = false
-format =  "[•$hostname](bg:cyan bold fg:black)[](bold fg:cyan)"
-trim_at = ".companyname.com"
-disabled = false
-
-[line_break]
-disabled = false
-
-[memory_usage]
-disabled = true
-threshold = -1
-symbol = " "
-style = "bold dimmed green"
-
-[time]
-disabled = true
-format = '🕙[\[ $time \]]($style) '
-time_format = "%T"
-
-[username]
-style_user = "bold bg:green fg:black"
-style_root = "red bold"
-format = '[$user]($style)[](bold fg:green)'
-disabled = false
-show_always = true
-
-[directory]
-home_symbol = "  "
-read_only = "  "
-style = "bg:cyan fg:black"
-truncation_length = 6
-truncation_symbol = " ••/"
-format = '[](bold fg:cyan)[󰉋 $path]($style)[](bold fg:cyan)'
-
-
-[directory.substitutions]
-"Desktop" = "  "
-"Documents" = "  "
-"Downloads" = "  "
-"Music" = " 󰎈 "
-"Pictures" = "  "
-"Videos" = "  "
-"GitHub" = " 󰊤 "
-
-[cmd_duration]
-disabled = true
-min_time = 0
-format = '[](bold fg:yellow)[󰪢 $duration](bold bg:yellow fg:black)[](bold fg:yellow)'
+[zig]
+symbol = " "
 
 [os]
 disabled = false
-style = "bold bg:green fg:black"
-format = '[](bold fg:green)[$symbol]($style)'
+[username]
+show_always = true
 
-[os.symbols]
-CachyOS = " "
-
-
-[palettes.frozen]
-black = "#282c34"
-red = "#e06c75"
-green = "#98c379"
-yellow = "#e5c07b"
-blue = "#61afef"
-purple = "#c678dd"
-magenta = "#c678dd"
-cyan = "#56b6c2"
-white = "#abb2bf"
-bright-black = "#545862"
-bright-red = "#e06c75"
-bright-green = "#98c379"
-bright-yellow = "#e5c07b"
-bright-blue = "#61afef"
-bright-purple = "#c678dd"
-bright-magenta = "#c678dd"
-bright-cyan = "#56b6c2"
-bright-white = "#c5cdd9"

@@ -3,7 +3,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": true,
   "explorer.compactFolders": false,
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka', 'Menlo', Consolas, Courier New, spacemono",
   "editor.fontWeight": "normal",
   "editor.minimap.autohide": "mouseover",

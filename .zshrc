@@ -19,8 +19,15 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # neovim
-alias vim='nvim'
+alias nv='nvim'
 
 #lazygit-yadm
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
+
+#fastfetch
+alias ff="fastfetch"
+
+#btop
+alias bt="btop"
+
 

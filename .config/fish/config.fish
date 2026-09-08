@@ -48,10 +48,15 @@ end
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
 
 #neovim
-alias vim='nvim'
+alias nv='nvim'
 
 #eza 
 alias ls="eza --icons --group-directories-first"
+
+#fastfetch
+alias ff="fastfetch"
+#btop
+alias bt="btop"
 
 #rustc
 fish_add_path ~/.cargo/bin

@@ -189,7 +189,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        //off
+        off
         width 2
         active-color "#7fc8ff"
         inactive-color "#505050"
@@ -346,16 +346,16 @@ window-rule {
     blur true
     xray false
   }
-  opacity 0.80
+  opacity 0.85
 }
 
 
 /* You can also fine-tune the blur effect globally. */
 blur {
-  passes 4        // more passes = stronger blur (default: 3)
+  passes 3        // more passes = stronger blur (default: 3)
   offset 3.0      // sample distance per pass (default: 3.0)
   noise 0.02      // grain overlay (default: 0.02)
-  saturation 1.5  // color saturation boost (default: 1.5)
+  saturation 1.0  // color saturation boost (default: 1.5)
 }
 
 
