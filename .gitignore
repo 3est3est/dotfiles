@@ -1,0 +1,5 @@
+# เก็บไว้ในเครื่อง แต่ไม่เอาเข้า repo (เคยเผลอ push ขึ้นไป)
+.config/niri/noctalia.kdl
+.config/kitty/current-theme.conf
+.config/kitty/kitty.conf.bak
+.config/kitty/themes/noctalia.conf
