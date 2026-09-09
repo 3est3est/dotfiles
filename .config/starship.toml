@@ -165,7 +165,8 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
-CachyOS = " "
+Arch = " "
+CachyOS = " "
 Linux = " "
 
 [package]
@@ -251,9 +252,12 @@ symbol = " "
 
 [os]
 disabled = false
-style = "bold cyan"
+style = "bold white"
+
 [username]
 show_always = true
+style_user = "green bold"
+style_root = "red bold"
 
 [character]
 success_symbol = "[❯](bold #ff5fd7)"
