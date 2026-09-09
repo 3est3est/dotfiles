@@ -32,25 +32,25 @@
       "format": "{#39} ----------------------"
     },
     {
-      "key": " {#keys} OS      ",
+      "key": " {#title} OS      ",
       "type": "os",
       "format": "{2}"
     },
     {
-      "key": " {#keys} Host    ",
+      "key": " {#title} Host    ",
       "type": "host"
     },
     {
-      "key": " {#keys} Kernel  ",
+      "key": " {#title} Kernel  ",
       "type": "kernel"
     },
     {
-      "key": " {#keys} Pkgs    ",
+      "key": " {#title} Pkgs    ",
       "type": "packages",
       "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#keys} WM      ",
+      "key": " {#title} WM      ",
       "type": "wm"
     },
     {

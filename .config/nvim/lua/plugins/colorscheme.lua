@@ -26,14 +26,6 @@ return {
     name = "rose-pine",
     priority = 1000,
   },
-
-  -- tokyonight-night  gruvbox  catppuccin  kanagawa  rose-pine  dracula  nord  everforest  sonokai  compact  oxocarbon
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight-night",
-    },
-  },
   {
     "shaunsingh/nord.nvim",
     lazy = true,
@@ -58,5 +50,23 @@ return {
     "nyoom-engineering/oxocarbon.nvim",
     lazy = true,
     priority = 1000,
+  },
+  {
+    "bluz71/vim-moonfly-colors",
+    name = "moonfly",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "cyberdream",
+    },
   },
 }
