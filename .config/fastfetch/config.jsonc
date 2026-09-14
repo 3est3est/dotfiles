@@ -23,13 +23,13 @@
   },
   "modules": [
     {
-      "key": "{#title}",
+      "key": " {#title}",
       "type": "title",
       "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
     },
     {
       "type": "custom",
-      "format": "{#39} ----------------------"
+      "format": "{#39}  ----------------"
     },
     {
       "key": " {#title} OS      ",

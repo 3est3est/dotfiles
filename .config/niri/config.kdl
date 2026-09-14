@@ -101,7 +101,7 @@ input {
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 10
+    gaps 8
     
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -354,7 +354,7 @@ blur {
   passes 3        // more passes = stronger blur (default: 3)
   offset 3.0      // sample distance per pass (default: 3.0)
   noise 0.02      // grain overlay (default: 0.02)
-  saturation 1.0  // color saturation boost (default: 1.5)
+  saturation 1.5  // color saturation boost (default: 1.5)
 }
 
 
@@ -382,6 +382,7 @@ overview {
   workspace-shadow {
     on
     }
+  zoom 0.70
 }
 
 
@@ -677,6 +678,7 @@ binds {
     Mod+Alt+M { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh shm"; }
 }
 
-include "noctalia.kdl"
 include "noctalia-user.kdl"
 
+
+include "noctalia.kdl"
