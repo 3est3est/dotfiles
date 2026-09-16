@@ -7,7 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "disable_ai": false,
+  "agent_buffer_font_size": 17.0,
+  "focus_follows_mouse": {
+    "enabled": false
+  },
+  "disable_ai": true,
   "toolbar": {
     "code_actions": false
   },
@@ -23,6 +27,7 @@
   "use_system_window_tabs": false,
   "bottom_dock_layout": "contained",
   "tab_bar": {
+    "show": true,
     "show_pinned_tabs_in_separate_row": false
   },
   "title_bar": {
@@ -36,6 +41,12 @@
     "line_endings_button": false
   },
   "agent": {
+    "default_model": {
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.2:free",
+      "enable_thinking": true,
+      "effort": "high"
+    },
     "sidebar_side": "right",
     "favorite_models": [],
     "model_parameters": []
@@ -48,16 +59,18 @@
   "edit_predictions": {
     "provider": "zed"
   },
-  "markdown_preview_font_size": 16.0,
+  "markdown_preview_font_size": 17.0,
   "sticky_scroll": {
     "enabled": false
   },
   "terminal": {
     "blinking": "on",
     "cursor_shape": "bar",
-    "font_size": 15.0
+    "font_size": 17.0
   },
   "tabs": {
+    "show_diagnostics": "off",
+    "close_position": "right",
     "git_status": true,
     "file_icons": true
   },
@@ -68,7 +81,7 @@
     "entry_spacing": "standard",
     "dock": "left"
   },
-  "agent_ui_font_size": 17.0,
+  "agent_ui_font_size": 18.0,
   "ui_font_family": "JetBrainsMono Nerd Font",
   "colorize_brackets": true,
   "reduce_motion": "off",
@@ -87,12 +100,12 @@
     "light": "Material Icon Theme",
     "dark": "Material Icon Theme"
   },
-  "ui_font_size": 17.0,
-  "buffer_font_size": 16.0,
+  "ui_font_size": 18.0,
+  "buffer_font_size": 17.0,
   "theme": {
     "mode": "dark",
-    "light": "Catppuccin Iced Latte (Blur)",
-    "dark": "Catppuccin Espresso (Blur) [Light]"
+    "light": "Catppuccin Latte (Blur)",
+    "dark": "Catppuccin Espresso (Blur)"
   },
   "lsp_document_colors": "background"
 }
