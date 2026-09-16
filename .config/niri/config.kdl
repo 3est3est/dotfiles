@@ -12,11 +12,11 @@ output "eDP-1" {
 prefer-no-csd
 environment {
     // all libedecot hide all any apps
-    LIBDECOR_PLUGIN "dummy"
+    //LIBDECOR_PLUGIN "dummy"
     
-    // GTK and Qt dont make titlebars
-    GTK_CSD "0"
-    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    //GTK and Qt dont make titlebars
+   // GTK_CSD "0"
+  //  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 
     // en bar
     LC_TIME "en_US.UTF-8"

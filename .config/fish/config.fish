@@ -73,3 +73,7 @@ fish_add_path ~/.bun/bin
 
 # opencode
 fish_add_path /home/naruebet/.opencode/bin
+
+
+# Added by Antigravity CLI installer
+set -gx PATH "/home/naruebet/.local/bin" $PATH

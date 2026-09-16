@@ -1,0 +1,98 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "disable_ai": false,
+  "toolbar": {
+    "code_actions": false
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "mouse_wheel_zoom": true,
+  "scroll_beyond_last_line": "one_page",
+  "search": {
+    "center_on_match": false
+  },
+  "window_decorations": "client",
+  "use_system_window_tabs": false,
+  "bottom_dock_layout": "contained",
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false
+  },
+  "title_bar": {
+    "button_layout": "close:minimize,maximize",
+    "show_branch_name": true,
+    "show_menus": false,
+    "show_branch_status_icon": false
+  },
+  "status_bar": {
+    "show_active_file": true,
+    "line_endings_button": false
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "instrumentation": {
+    "performance_profiler": {
+      "enabled": false
+    }
+  },
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "markdown_preview_font_size": 16.0,
+  "sticky_scroll": {
+    "enabled": false
+  },
+  "terminal": {
+    "blinking": "on",
+    "cursor_shape": "bar",
+    "font_size": 15.0
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "project_panel": {
+    "button": true,
+    "git_status_indicator": false,
+    "bold_folder_labels": false,
+    "entry_spacing": "standard",
+    "dock": "left"
+  },
+  "agent_ui_font_size": 17.0,
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "colorize_brackets": true,
+  "reduce_motion": "off",
+  "cursor_shape": "bar",
+  "text_rendering_mode": "platform_default",
+  "proxy": "",
+  "which_key": {
+    "delay_ms": 1000
+  },
+  "cursor_blink": true,
+  "buffer_line_height": "standard",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "vim_mode": false,
+  "icon_theme": {
+    "mode": "system",
+    "light": "Material Icon Theme",
+    "dark": "Material Icon Theme"
+  },
+  "ui_font_size": 17.0,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "Catppuccin Iced Latte (Blur)",
+    "dark": "Catppuccin Espresso (Blur) [Light]"
+  },
+  "lsp_document_colors": "background"
+}

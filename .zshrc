@@ -31,3 +31,7 @@ alias bt="btop"
 #yazi
 alias yz="yazi"
 
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/naruebet/.local/bin:$PATH"
