@@ -50,14 +50,12 @@ alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
 alias jctl="journalctl -p 3 -xb"
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
-# ---------- ขึ้น directory (พอร์ตจาก fish) ----------
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
-# ---------- mirrors ที่เร็วที่สุด (พอร์ตจาก fish, Arch/CachyOS-only) ----------
 command -v cachyos-rate-mirrors &>/dev/null && alias mirror="sudo cachyos-rate-mirrors"
 
 alias nv='nvim'
