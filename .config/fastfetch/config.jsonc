@@ -28,46 +28,46 @@
       "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
     },
     {
-      "key": " {#title} OS      ",
+      "key": " {#title}  OS      ",
       "type": "os",
       "format": "{2}"
     },
     {
-      "key": " {#title} Host    ",
-      "type": "host"
-    },
-    {
-      "key": " {#title} Kernel  ",
+      "key": " {#title}  Kernel  ",
       "type": "kernel"
     },
     {
-      "key": " {#title} Pkgs    ",
+      "key": " {#title} 󰌢 Host    ",
+      "type": "host"
+    },
+    {
+      "key": " {#title} 󰏖 Pkgs    ",
       "type": "packages",
       "format": "{pacman} (pacman) {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#title} WM      ",
+      "key": " {#title} 󱂬 WM      ",
       "type": "wm"
     },
     {
-      "key": " {#keys} Term    ",
+      "key": " {#keys}  Term    ",
       "type": "terminal"
     },
     {
-      "key": " {#keys} Shell   ",
+      "key": " {#keys} 󰞷 Shell   ",
       "type": "shell"
     },
     {
-      "key": " {#keys} CPU     ",
+      "key": " {#keys} 󰻠 CPU     ",
       "type": "cpu",
       "format": "{1}"
     },    
     {
-      "key": " {#keys} Memory  ",
+      "key": " {#keys} 󰍛 Memory  ",
       "type": "memory"
     },
     {
-      "key": " {#keys} Uptime  ",
+      "key": " {#keys} 󰅐 Uptime  ",
       "type": "uptime"
     },
     {
