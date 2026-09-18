@@ -44,6 +44,22 @@ function gparted
     xhost -si:localuser:root >/dev/null 2>&1
 end
 
+# Common use
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+# Get fastest mirrors
+alias mirror="sudo cachyos-rate-mirrors"
+
+# Get the error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# Recent installed packages
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+
 #lazygit-yadm
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
 
@@ -73,7 +89,6 @@ fish_add_path ~/.bun/bin
 
 # opencode
 fish_add_path /home/naruebet/.opencode/bin
-
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/naruebet/.local/bin" $PATH

@@ -4,7 +4,7 @@
     "source": "cachyos_small",
     "type": "auto",
     "padding": {
-      "top": 1,
+      "top": 0,
       "right": 3,
       "left": 2
     },
@@ -26,10 +26,6 @@
       "key": " {#title}",
       "type": "title",
       "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
-    },
-    {
-      "type": "custom",
-      "format": "{#39}  ----------------"
     },
     {
       "key": " {#title} OS      ",
