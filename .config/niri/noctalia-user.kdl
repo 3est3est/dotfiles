@@ -56,8 +56,8 @@ binds {
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
 
     // Core Noctalia binds
-    Mod+S { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+SHIFT+S { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+Comma { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Shift+Comma { spawn-sh "noctalia msg settings-toggle"; }
     Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
 
     // Audio & Brightness
@@ -70,7 +70,7 @@ binds {
     Mod+Shift+D { spawn-sh "noctalia msg dock-toggle"; }
     Mod+Alt+L hotkey-overlay-title="Lock the Screen: noctalia" { spawn-sh "noctalia msg session lock"; }
     Ctrl+Mod+Alt+R { spawn-sh "noctalia msg config-reload"; }
-    Mod+Shift+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
     Mod+Shift+W { spawn-sh "noctalia msg panel-toggle wallpaper"; }
 
     Print { spawn-sh "noctalia msg screenshot-region"; }
