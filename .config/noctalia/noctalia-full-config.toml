@@ -111,7 +111,7 @@ order = [ "default" ]
         enabled = true
         fill = "shadow"
         id = "g4"
-        members = [ "launcher", "file-search" ]
+        members = [ "control-center", "file-search" ]
         opacity = 0.79999995231628418
         padding = 6.0
         radius = 8.0
@@ -175,13 +175,13 @@ active_monitor_only = false
 active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
-background_opacity = 0.59999996423721313
+background_opacity = 0.5
 border = "outline"
 border_width = 0.0
 concave_edge_corners = true
-cross_axis_padding = 3
+cross_axis_padding = 1
 enabled = true
-icon_size = 43
+icon_size = 42
 inactive_opacity = 1.0
 inactive_scale = 0.85000002384185791
 item_spacing = 0
@@ -192,18 +192,19 @@ launcher_position = "end"
 layer = "top"
 magnification = true
 magnification_scale = 1.4500000476837158
-main_axis_padding = 16
-margin_edge = 1
+main_axis_padding = 0
+margin_edge = 2
 margin_ends = 0
 monitors = []
 pinned = [
     "brave-origin",
     "kitty",
+    "Alacritty",
     "dev.zed.Zed",
     "code",
     "discord",
+    "spotify",
     "steam",
-    "spotify-launcher",
     "obsidian",
     "com.obsproject.Studio",
     "org.vinegarhq.Sober"
@@ -1233,6 +1234,11 @@ type = "brightness"
 [widget.clock]
 color = "primary"
 type = "clock"
+
+[widget.control-center]
+custom_image = "/usr/share/icons/cachyos.svg"
+custom_image_colorize = true
+type = "control-center"
 
 [widget.cpu]
 stat = "cpu_usage"
