@@ -57,7 +57,22 @@
 }
 
 .thunar .frame.standard-view .view *:selected {
-    color: #acc9ea;
+    color: #e1e6ef;
+}
+
+/* =============================================================================
+   Icon-view selection - soft grey like GNOME Files
+   ============================================================================= */
+
+.thunar iconview:selected,
+.thunar iconview text:selected,
+.thunar .view:selected,
+.thunar .frame.standard-view .view:selected,
+.thunar .standard-view .view:selected {
+    background-color: alpha(#e1e6ef, 0.12);
+    background-image: none;
+    color: #e1e6ef;
+    border-radius: 10px;
 }
 
 .thunar .rubberband {
