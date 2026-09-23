@@ -23,7 +23,7 @@
       "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
     },
     {
-      "key": " {#title}  OS      ",
+      "key": " {#title}  Distro  ",
       "type": "os",
       "format": "{2}"
     },
