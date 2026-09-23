@@ -1,7 +1,7 @@
 
 [general]
 import = [
-  "~/.config/alacritty/themes/alacritty-themes/moonfly.toml"
+    "~/.config/alacritty/themes/alacritty-themes/moonfly.toml"
 ]
 
 [font]
