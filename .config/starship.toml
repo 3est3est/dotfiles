@@ -166,7 +166,7 @@ symbol = " "
 
 [os.symbols]
 Arch = " "
-CachyOS = " "
+CachyOS = " "
 Linux = " "
 
 [package]

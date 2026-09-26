@@ -92,8 +92,7 @@
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "notebook.output.scrolling": true,
-  "workbench.colorTheme": "Fleet Dark",
   "window.titleBarStyle": "native",
-  "workbench.activityBar.location": "top",
   "window.customTitleBarVisibility": "never",
+  "workbench.colorTheme": "Fleet Dark",
 }
