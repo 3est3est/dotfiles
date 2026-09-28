@@ -670,12 +670,12 @@ binds {
 
     // Toggle mirror of the laptop screen (eDP-1) to the connected external
     // output, fullscreen. Press again to return to extend.
-    Mod+Shift+M hotkey-overlay-title="Toggle Mirror eDP-1 to External / Extend" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh"; }
+    Mod+Ctrl+M hotkey-overlay-title="Toggle Mirror eDP-1 to External / Extend" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh"; }
 
     // Restart mirror forcing the GPU zero-copy backend, in case the image freezes.
-    Mod+Ctrl+M hotkey-overlay-title="Mirror: restart with GPU backend (dmabuf)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh dmabuf"; }
+   // Mod+Ctrl+M hotkey-overlay-title="Mirror: restart with GPU backend (dmabuf)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh dmabuf"; }
     // Restart mirror forcing the CPU backend (last resort if dmabuf fails).
-    Mod+Alt+M hotkey-overlay-title="Mirror: restart with CPU backend (shm, fallback)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh shm"; }
+   // Mod+Alt+M hotkey-overlay-title="Mirror: restart with CPU backend (shm, fallback)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh shm"; }
 }
 
 include "noctalia-user.kdl"

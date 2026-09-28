@@ -1,8 +1,8 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "cachyos",
-    "type": "small",
+    "source": "cachyos_small",
+    "type": "auto",
     "padding": {
       "top": 0,
       "right": 3,
@@ -23,50 +23,50 @@
       "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
     },
     {
-      "key": " {#title}  distro  ",
+      "key": " {#title}   ",
       "type": "os",
       "format": "{2}"
     },
     {
-      "key": " {#title}  kernel  ",
+      "key": " {#title}   ",
       "type": "kernel"
     },
     {
-      "key": " {#title} 󰌢 host    ",
+      "key": " {#title} 󰌢  ",
       "type": "host",
     },
     {
-      "key": " {#title} 󰏖 pkgs    ",
+      "key": " {#title} 󰏖  ",
       "type": "packages",
       "format": "{pacman} (pacman), {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#title} 󱂬 wm      ",
+      "key": " {#title}   ",
       "type": "wm"
     },
     {
-      "key": " {#keys}  term    ",
+      "key": " {#keys}   ",
       "type": "terminal"
     },
     {
-      "key": " {#keys} 󰞷 shell   ",
+      "key": " {#keys} 󰞷  ",
       "type": "shell"
     },
     {
-      "key": " {#keys} 󰻠 cpu     ",
+      "key": " {#keys}   ",
       "type": "cpu",
       "format": "{1}"
     },    
     {
-      "key": " {#keys} 󰍛 memory  ",
+      "key": " {#keys}   ",
       "type": "memory"
     },
     {
-      "key": " {#keys} 󰅐 uptime  ",
+      "key": " {#keys}   ",
       "type": "uptime"
     },
     {
-      "key": " {#33} 󰮯 {#37}•••     ",
+      "key": " {#33} 󰮯 {#37}•",
       "type": "custom",
       "format": "{#38}󰊠 {#37}󰊠 {#35}󰊠 {#36}󰊠 {#34}󰊠 {#33}󰊠 {#32}󰊠 {#31}󰊠 "
     },

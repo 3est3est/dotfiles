@@ -52,12 +52,13 @@ binds {
    // noctalia launcher
    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     
-   // pugins
+   // plugins
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
+    Mod+Shift+M { spawn "noctalia" "msg" "panel-toggle" "elijaharch/wl-screen-mirror:controls"; }
 
     // Core Noctalia binds
-    Mod+Comma { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Shift+Comma { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+Period { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Shift+Period { spawn-sh "noctalia msg settings-toggle"; }
     Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
 
     // Audio & Brightness
