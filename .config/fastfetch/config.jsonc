@@ -8,67 +8,67 @@
       "right": 3,
       "left": 2
     },
+    "color": {
+      "1": "36",
+      "2": "96"
+    },
   },
   "display": {
-    "separator": " ",
-    "color": {
-      "keys": 1,
-      "title": 2,
-    }
+  "separator": " ",
   },
   "modules": [
     {
       "key": " {#title}",
       "type": "title",
-      "format": "{#keys}{user-name}{#39}@{#title}{host-name}"
+      "format": "{#96}{user-name}{#97}@{#92}{host-name}"
     },
     {
-      "key": " {#title}   ",
+      "key": " {#92}   ",
       "type": "os",
       "format": "{2}"
     },
     {
-      "key": " {#title}   ",
+      "key": " {#32}   ",
       "type": "kernel"
     },
     {
-      "key": " {#title} 󰌢  ",
+      "key": " {#96} 󰌢  ",
       "type": "host",
     },
     {
-      "key": " {#title} 󰏖  ",
+      "key": " {#36} 󰏖  ",
       "type": "packages",
       "format": "{pacman} (pacman), {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#title}   ",
+      "key": " {#92}   ",
       "type": "wm"
     },
     {
-      "key": " {#keys}   ",
+      "key": " {#32}   ",
       "type": "terminal"
     },
     {
-      "key": " {#keys} 󰞷  ",
+      "key": " {#96} 󰞷  ",
       "type": "shell"
     },
     {
-      "key": " {#keys}   ",
+      "key": " {#36}   ",
       "type": "cpu",
       "format": "{1}"
     },    
     {
-      "key": " {#keys}   ",
+      "key": " {#92}   ",
       "type": "memory"
     },
     {
-      "key": " {#keys}   ",
+      "key": " {#32}   ",
       "type": "uptime"
     },
     {
-      "key": " {#33} 󰮯 {#37}•",
+      "key": " {#93} 󰮯 {#97}•",
       "type": "custom",
-      "format": "{#38}󰊠 {#37}󰊠 {#35}󰊠 {#36}󰊠 {#34}󰊠 {#33}󰊠 {#32}󰊠 {#31}󰊠 "
+      "format": "{#30}󰊠 {#37}󰊠 {#35}󰊠 {#36}󰊠 {#34}󰊠 {#33}󰊠 {#32}󰊠 {#31}󰊠 "
     },
     {
       "type": "text",

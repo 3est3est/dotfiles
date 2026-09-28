@@ -252,11 +252,11 @@ symbol = " "
 
 [os]
 disabled = false
-style = "bold white"
+style = "bright-green bold"
 
 [username]
 show_always = true
-style_user = "green bold"
+style_user = "bright-cyan bold"
 style_root = "red bold"
 
 [character]
