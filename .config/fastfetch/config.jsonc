@@ -28,20 +28,20 @@
       "format": "{2}"
     },
     {
-      "key": " {#32}   ",
+      "key": " {#92}   ",
       "type": "kernel"
     },
     {
-      "key": " {#96} 󰌢  ",
+      "key": " {#92} 󰌢  ",
       "type": "host",
     },
     {
-      "key": " {#36} 󰏖  ",
+      "key": " {#96} 󰏖  ",
       "type": "packages",
       "format": "{pacman} (pacman), {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#92}   ",
+      "key": " {#96}   ",
       "type": "wm"
     },
     {
@@ -49,20 +49,20 @@
       "type": "terminal"
     },
     {
-      "key": " {#96} 󰞷  ",
+      "key": " {#32} 󰞷  ",
       "type": "shell"
     },
     {
-      "key": " {#36}   ",
+      "key": " {#32}   ",
       "type": "cpu",
       "format": "{1}"
     },    
     {
-      "key": " {#92}   ",
+      "key": " {#36}   ",
       "type": "memory"
     },
     {
-      "key": " {#32}   ",
+      "key": " {#36}   ",
       "type": "uptime"
     },
     {
