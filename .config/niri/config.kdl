@@ -374,7 +374,7 @@ blur {
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 12
+    geometry-corner-radius 18
     clip-to-geometry true
 }
 

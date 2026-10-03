@@ -4,6 +4,9 @@ import = [
     "~/.config/alacritty/themes/alacritty-themes/moonfly.toml"
 ]
 
+[window] 
+opacity = 0.8
+
 [font]
 size = 13 
 
