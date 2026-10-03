@@ -5,9 +5,8 @@ ui_scale = 1.25
 [audio]
 enable_overdrive = false
 enable_sounds = false
-notification_sound = ""
+sound_theme = "freedesktop"
 sound_volume = 0.5
-volume_change_sound = ""
 
 [backdrop]
 blur_intensity = 0.5
@@ -32,7 +31,7 @@ order = [ "default" ]
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
-    end = [ "audio_visualizer", "tray", "group:g5", "group:g3", "keyboard_layout", "battery", "session" ]
+    end = [ "audio_visualizer", "tray", "group:g5", "group:g3", "keyboard_layout", "session" ]
     font_family = "JetBrainsMono NF"
     font_scale = 1.0
     font_weight = 500
@@ -67,7 +66,7 @@ order = [ "default" ]
         enabled = true
         fill = "shadow"
         id = "g3"
-        members = [ "network", "bluetooth", "volume", "brightness" ]
+        members = [ "network", "bluetooth", "volume", "brightness", "battery" ]
         opacity = 0.80000001192092896
         padding = 6.0
 
@@ -131,6 +130,12 @@ event_date_format = "%A %e %B"
 event_time_format = "%H:%M"
 refresh_minutes = 15
 
+    [calendar.reminders]
+    all_day_digest_time = "09:00"
+    default_lead_minutes = 10
+    enabled = true
+    use_event_reminders = true
+
 [control_center]
 hidden_tabs = []
 show_session_button = true
@@ -162,7 +167,7 @@ width = 700
     type = "power_profile"
 
 [desktop_widgets]
-enabled = false
+enabled = true
 schema_version = 2
 
     [desktop_widgets.grid]
@@ -175,12 +180,12 @@ active_monitor_only = false
 active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
-background_opacity = 0.5
+background_opacity = 0.64999997615814209
 border = "outline"
 border_width = 0.0
 concave_edge_corners = true
-cross_axis_padding = 1
-enabled = true
+cross_axis_padding = 0
+enabled = false
 icon_size = 42
 inactive_opacity = 1.0
 inactive_scale = 0.85000002384185791
@@ -201,12 +206,14 @@ pinned = [
     "kitty",
     "Alacritty",
     "dev.zed.Zed",
-    "code",
+    "com.microsoft.VSCode",
     "discord",
     "spotify",
     "steam",
     "obsidian",
+    "org.bleachbit.BleachBit",
     "com.obsproject.Studio",
+    "localsend",
     "org.vinegarhq.Sober"
 ]
 position = "bottom"
@@ -216,7 +223,7 @@ radius_bottom_right = 10
 radius_top_left = 10
 radius_top_right = 10
 reserve_space = false
-shadow = false
+shadow = true
 show_dots = true
 show_instance_count = true
 show_running = true
@@ -314,11 +321,14 @@ sunset = ""
 allow_empty_password = false
 blur_intensity = 0.44999998807907104
 blurred_desktop = false
+edge_smoothness = 0.30000001192092896
 enabled = true
 fingerprint = true
 lock_before_suspend = true
 monitors = []
 tint_intensity = 0.30000001192092896
+transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
+transition_duration = 1500.0
 wallpaper = ""
 
 [lockscreen_widgets]
@@ -942,7 +952,7 @@ panel_placement = "floating"
 
 [plugins]
 auto_update = "all"
-enabled = [ "nightwatch75/file-search", "kenn/keybind-cheatsheet" ]
+enabled = [ "nightwatch75/file-search", "kenn/keybind-cheatsheet", "elijaharch/wl-screen-mirror" ]
 
     [[plugins.source]]
     enabled = true
@@ -978,10 +988,11 @@ launch_apps_custom_command = ""
 niri_overview_type_to_launch_enabled = false
 offline_mode = false
 password_style = "random"
-polkit_agent = false
+polkit_agent = true
 popup_borders = true
 popup_shadows = true
 screen_time_enabled = false
+settings_expand_all_groups = false
 settings_show_advanced = true
 settings_window_translucent = false
 setup_wizard_enabled = true
@@ -989,6 +1000,7 @@ shared_gl_context = true
 show_location = true
 telemetry_enabled = false
 time_format = "{:%H:%M}"
+umbriel_overview_type_to_launch_enabled = false
 
     [shell.animation]
     enabled = true
@@ -1014,6 +1026,9 @@ time_format = "{:%H:%M}"
 
         [shell.launcher.dmenu]
 
+        [shell.launcher.panels]
+        ignored = [ "polkit", "setup-wizard", "test", "launcher" ]
+
         [shell.launcher.providers.emoji]
         global = false
         prefix = ""
@@ -1025,7 +1040,7 @@ time_format = "{:%H:%M}"
     borders = true
     clipboard_placement = "floating"
     clipboard_position = "center"
-    control_center_placement = "attached"
+    control_center_placement = "floating"
     control_center_position = "auto"
     floating_layer = "overlay"
     floating_offset = 8
@@ -1042,7 +1057,7 @@ time_format = "{:%H:%M}"
     session_placement = "floating"
     session_position = "center"
     shadow = true
-    transparency_mode = "soft"
+    transparency_mode = "glass"
     wallpaper_placement = "floating"
     wallpaper_position = "top_center"
 
@@ -1052,12 +1067,13 @@ time_format = "{:%H:%M}"
     screen_filter_regex = ""
 
     [shell.screen_corners]
-    enabled = true
+    enabled = false
     size = 32
 
     [shell.screenshot]
     annotate = false
     close_on_copy = true
+    close_on_save = true
     confirm_region = false
     copy_to_clipboard = true
     directory = ""
@@ -1068,6 +1084,7 @@ time_format = "{:%H:%M}"
     remember_last_region = false
     save_to_file = false
     show_cursor = false
+    skip_annotate_on_copy_save = false
 
     [shell.session]
     grid = false
@@ -1131,7 +1148,13 @@ time_format = "{:%H:%M}"
     direction = "down"
 
     [shell.window_switcher]
+    current_workspace_only = false
     mru = false
+    show_all_outputs = true
+    show_app_icon = true
+    show_caption = true
+    show_count = true
+    style = "carousel"
 
 [storage]
 key_file = ""
@@ -1175,7 +1198,7 @@ swap_pct_activity_threshold = 20.0
 swap_pct_critical_threshold = 80.0
 
 [theme]
-builtin = "Catppuccin"
+builtin = "Kanagawa"
 community_palette = "Oxocarbon"
 custom_palette = ""
 mode = "dark"
@@ -1185,8 +1208,8 @@ source = "wallpaper"
 wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "niri" ]
-    community_ids = [ "opencode", "yazi" ]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "niri", "qt" ]
+    community_ids = [ "opencode", "vscode", "zed", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -1210,14 +1233,14 @@ transition_on_startup = false
     recursive = true
 
 [weather]
-effects = true
+effects = false
 enabled = true
 refresh_minutes = 30
 unit = "metric"
 
 [widget.active_window]
 icon_size = 14.0
-max_length = 200
+max_length = 250
 min_length = 80.0
 title_scroll = "none"
 type = "active_window"
@@ -1245,7 +1268,7 @@ stat = "cpu_usage"
 type = "sysmon"
 
 [widget.date]
-format = " {:%a %d %b}"
+format = "{:%a %d %b}"
 type = "clock"
 
 [widget.file-search]
@@ -1315,3 +1338,7 @@ type = "sysmon"
 [widget.volume]
 show_label = false
 type = "volume"
+
+[widget.weather]
+show_condition = false
+type = "weather"

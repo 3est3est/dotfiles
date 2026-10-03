@@ -55,6 +55,7 @@ binds {
    // plugins
     Mod+F1 { spawn "noctalia" "msg" "panel-toggle" "kenn/keybind-cheatsheet:cheatsheet"; }
     Mod+Shift+M { spawn "noctalia" "msg" "panel-toggle" "elijaharch/wl-screen-mirror:controls"; }
+    Mod+Ctrl+W { spawn "noctalia" "msg" "panel-toggle" "noctalia/mpvpaper:picker"; } 
 
     // Core Noctalia binds
     Mod+D { spawn-sh "noctalia msg panel-toggle control-center"; }

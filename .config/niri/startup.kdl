@@ -2,8 +2,8 @@
 // Shell (Noctalia) 
 spawn-sh-at-startup "env LC_TIME=en_US.UTF-8 noctalia"
 
-// Polkit authentication agent (required for gparted, etc. via pkexec)
-spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+//hyprpolkitagent
+// spawn-at-startup "/usr/lib/hyprpolkitagent/hyprpolkitagent"
 
 // System tray
 spawn-at-startup "nm-applet" "--indicator"
