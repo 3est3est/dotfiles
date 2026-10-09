@@ -374,7 +374,7 @@ blur {
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
     draw-border-with-background false
-    geometry-corner-radius 18
+    geometry-corner-radius 16
     clip-to-geometry true
 }
 
@@ -382,7 +382,7 @@ overview {
   workspace-shadow {
     on
     }
-  zoom 0.70
+  zoom 0.60
 }
 
 
