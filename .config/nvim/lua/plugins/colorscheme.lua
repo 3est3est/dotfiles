@@ -1,4 +1,14 @@
 return {
+
+  -- Usage -- ColorScheme-startup
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight-night",
+    },
+  },
+
+  -- ColorScheme
   {
     "folke/tokyonight.nvim",
     opts = {
@@ -62,11 +72,12 @@ return {
     lazy = false,
     priority = 1000,
   },
-
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight-night",
-    },
+    "marekh19/meowsoot.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("meowsoot")
+    end,
   },
 }

@@ -84,6 +84,6 @@
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "never",
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Fleet Dark",
   "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.colorTheme": "Fleet Dark",
 }

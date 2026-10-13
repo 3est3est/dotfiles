@@ -48,7 +48,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
-home_symbol = " ~"
+home_symbol = "~"
 
 [docker_context]
 symbol = " "
@@ -256,10 +256,10 @@ disabled = false
 style = "bright-blue bold"
 
 [username]
-show_always = false
+show_always = true
 style_user = "purple bold"
 style_root = "red bold"
 
 [character]
-success_symbol = "[~>](bold bright-cyan)"
+success_symbol = "[~>](bold green)"
 error_symbol = "[~x](bold bright-red)"

@@ -9,7 +9,7 @@
       "left": 2
     },
     "color": {
-      "1": "94",
+      "1": "36",
       "2": "36"
     },
   },
@@ -20,7 +20,7 @@
     {
       "key": " {#title}",
       "type": "title",
-      "format": "{#36}{user-name}{#97}@{#94}{host-name}"
+      "format": "{#35}{user-name}{#97}@{#36}{host-name}"
     },
     {
       "key": " {#36}   ",
