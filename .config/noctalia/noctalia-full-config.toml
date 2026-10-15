@@ -31,14 +31,14 @@ order = [ "default" ]
     capsule_fill = "surface"
     capsule_opacity = 1.0
     capsule_padding = 6.0
-    capsule_radius = 10.0
+    capsule_radius = 8.0
     capsule_thickness = 0.75999999046325684
     center = [ "group:g1" ]
     compositor_blur = false
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
-    end = [ "media", "tray", "group:g3", "group:g2", "keyboard_layout", "session" ]
+    end = [ "audio_visualizer", "tray", "group:g3", "group:g2", "keyboard_layout", "session" ]
     font_scale = 1.0
     font_weight = 500
     hover_highlight = true
@@ -359,10 +359,10 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
         show_weather = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 192.0
+    box_height = 208.0
     box_width = 480.0
-    cx = 960.0
-    cy = 412.0
+    cx = 944.0
+    cy = 404.0
     enabled = true
     output = "eDP-1"
     placement_height = 1080.0
@@ -378,7 +378,7 @@ widget_order = [ "lockscreen-login-box@eDP-1", "lockscreen-widget-00000000000000
     box_height = 32.0
     box_width = 480.0
     cx = 960.0
-    cy = 508.0
+    cy = 524.0
     enabled = true
     output = "eDP-1"
     placement_height = 1080.0
@@ -769,6 +769,12 @@ max_length = 260
 min_length = 80.0
 title_scroll = "none"
 type = "active_window"
+
+[widget.audio_visualizer]
+color_2 = "tertiary"
+mirrored = false
+show_when_idle = true
+type = "audio_visualizer"
 
 [widget.brightness]
 show_label = false
