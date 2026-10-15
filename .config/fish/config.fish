@@ -6,6 +6,12 @@ if status is-interactive
     command -v direnv &>/dev/null && direnv hook fish | source
     command -v zoxide &>/dev/null && zoxide init fish --cmd cd | source
 
+    # fzf (Ctrl+T files, Ctrl+R history, Alt+C cd)
+    if command -q fzf
+        set -gx FZF_DEFAULT_OPTS "--height 40% --min-height 20+ --bind=ctrl-z:ignore"
+        fzf --fish | source
+    end
+
     # Abbrs
     abbr lg lazygit
     abbr gd 'git diff'
@@ -24,7 +30,6 @@ if status is-interactive
     abbr gco 'git checkout'
     abbr gsh 'git show'
 end
-
 
 # Common use
 alias ..='cd ..'
@@ -62,6 +67,14 @@ alias n="ninja"
 # remove orphan packages
 alias cleanup="sudo pacman -Rsn (pacman -Qtdq)"
 
+# Editor + man pager (bat)
+set -gx EDITOR nvim
+set -gx VISUAL nvim
+if command -q bat
+    set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
+    set -gx MANROFFOPT -c
+end
+
 #rustc
 fish_add_path ~/.cargo/bin
 
@@ -75,7 +88,6 @@ fish_add_path ~/.bun/bin
 
 # opencode
 fish_add_path /home/naruebet/.opencode/bin
-
 
 # Added by Antigravity CLI installer
 set -gx PATH "/home/naruebet/.local/bin" $PATH

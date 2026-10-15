@@ -3,6 +3,10 @@
 export PATH="$HOME/.local/bin:$PATH"
 [[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 
+export EDITOR="nvim"
+export VISUAL="nvim"
+command -v bat &>/dev/null && export MANPAGER="sh -c 'col -bx | bat -l man -p'" MANROFFOPT="-c"
+
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000
 SAVEHIST=10000
@@ -37,6 +41,9 @@ if (( $+functions[history-substring-search-up] )); then
   bindkey -M emacs '^P' history-substring-search-up
   bindkey -M emacs '^N' history-substring-search-down
 fi
+
+[[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] \
+  && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # pkgfile command-not-found handler 
 [[ -f /usr/share/doc/pkgfile/command-not-found.zsh ]] \
@@ -92,20 +99,7 @@ command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 [[ -d "$HOME/.opencode/bin" && ":$PATH:" != *":$HOME/.opencode/bin:"* ]] && export PATH="$HOME/.opencode/bin:$PATH"
 [[ -d "$HOME/.spicetify" && ":$PATH:" != *":$HOME/.spicetify:"* ]] && export PATH="$HOME/.spicetify:$PATH"
 
-
-btop() {
-  printf "\033]737;size=11\033\\"
-  command btop "$@"
-  printf "\033]737;reset\033\\"
-}
-
 eval "$(starship init zsh)"
-
-# ---------- MUST BE LAST: syntax-highlighting (Arch standard path) ----------
-# Per upstream docs this must be sourced after all widgets/keymaps are defined.
-[[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] \
-  && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 
 # Added by Antigravity CLI installer
 export PATH="/home/naruebet/.local/bin:$PATH"

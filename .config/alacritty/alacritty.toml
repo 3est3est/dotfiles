@@ -32,4 +32,3 @@ style = {shape = "Beam", blinking = "On"}
 [terminal.shell]
 program = "/usr/bin/fish"
 args = ["--login"]
-
