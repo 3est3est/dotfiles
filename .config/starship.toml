@@ -48,7 +48,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
-home_symbol = "~"
+home_symbol = " ~"
 
 [docker_context]
 symbol = " "
@@ -81,7 +81,8 @@ symbol = "󱇶 "
 symbol = " "
 
 [git_branch]
-symbol = " "
+style = "green" 
+symbol = " " 
 
 [git_commit]
 tag_symbol = '  '
@@ -165,7 +166,7 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
-Arch = " "
+Arch = "󰣇 "
 CachyOS = " "
 Fedora = " "
 Linux = " "
@@ -253,13 +254,14 @@ symbol = " "
 
 [os]
 disabled = false
-style = "bright-blue bold"
+style = "white bold"
 
 [username]
 show_always = true
 style_user = "purple bold"
 style_root = "red bold"
 
+
 [character]
-success_symbol = "[~>](bold green)"
-error_symbol = "[~x](bold bright-red)"
+success_symbol = "[>](bold purple)[>](bold cyan)"
+error_symbol = "[x](bold yellow)[x](bold bright-red)"
