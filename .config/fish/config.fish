@@ -53,6 +53,9 @@ alias nv='nvim'
 #eza 
 alias ls="eza --icons --group-directories-first"
 
+# clear && fastfetch 
+alias cff="clear; and fastfetch"
+
 #fastfetch
 alias ff="fastfetch"
 #btop

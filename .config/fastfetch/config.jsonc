@@ -1,10 +1,10 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "source": "/home/naruebet/Pictures/Logo/arch.txt",
+    "source": "arch_small",
     "type": "auto",
     "padding": {
-      "top": 0,
+      "top": 1,
       "right": 2,
       "left": 2
     },
@@ -20,7 +20,7 @@
     {
       "key": " {#title}",
       "type": "title",
-      "format": "{#35}{user-name}{#97}@{#36}{host-name}"
+      "format": "{#35}{user-name}{#97}@{#35}{host-name}"
     },
     {
       "key": " {#36}   ",
@@ -28,41 +28,41 @@
       "format": "{2}"
     },
     {
-      "key": " {#94}   ",
+      "key": " {#36}   ",
       "type": "kernel"
     },
     {
-      "key": " {#95} 󰌢  ",
+      "key": " {#36} 󰌢  ",
       "type": "host",
     },
     {
-      "key": " {#35} 󰏖  ",
+      "key": " {#36} 󰏕  ",
       "type": "packages",
       "format": "{pacman} (pacman), {flatpak-all} (flatpak)"
     },
     {
-      "key": " {#92}   ",
+      "key": " {#36}   ",
       "type": "wm"
     },
     {
-      "key": " {#96}   ",
+      "key": " {#36}   ",
       "type": "terminal"
     },
     {
-      "key": " {#32} 󰞷  ",
+      "key": " {#36} 󰞷  ",
       "type": "shell"
     },
     {
-      "key": " {#33}   ",      
+      "key": " {#36}   ",      
       "type": "cpu",
       "format": "{1}"
     },    
     {
-      "key": " {#31}   ",
+      "key": " {#36}   ",
       "type": "memory"
     },
     {
-      "key": " {#91}   ",
+      "key": " {#36}   ",
       "type": "uptime"
     },
     {

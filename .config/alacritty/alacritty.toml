@@ -1,7 +1,8 @@
 
 [general]
 import = [
-    "~/.config/alacritty/themes/moonfly.toml"
+  #"~/.config/alacritty/themes/moonfly.toml"
+    "~/.config/alacritty/themes/noctalia.toml",
 ]
 
 [window] 

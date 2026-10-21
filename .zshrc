@@ -71,6 +71,7 @@ alias ......='cd ../../../../..'
 
 alias nv='nvim'
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
+alias cff="clear &&  fastfetch"
 alias ff="fastfetch"
 alias bt="btop"
 alias yz="yazi"
