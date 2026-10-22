@@ -86,7 +86,7 @@
   "terminal.external.linuxExec": "kitty",
   "window.commandCenter": false,
   "window.menuBarVisibility": "compact",
-  "window.titleBarStyle": "native",
   "window.menuStyle": "native",
   "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
 }

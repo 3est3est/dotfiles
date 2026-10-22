@@ -34,13 +34,15 @@
     "line_endings_button": false
   },
   "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
     "default_model": {
       "provider": "openrouter",
       "model": "z-ai/glm-5.2:free",
       "enable_thinking": true,
       "effort": "high"
     },
-    "sidebar_side": "right",
     "favorite_models": [],
     "model_parameters": []
   },
@@ -52,11 +54,13 @@
   "edit_predictions": {
     "provider": "zed"
   },
-  "markdown_preview_font_size": 17.0,
   "sticky_scroll": {
     "enabled": false
   },
   "terminal": {
+    "shell": {
+      "program": "zsh"
+    },
     "blinking": "on",
     "cursor_shape": "bar",
     "font_size": 17.0
@@ -97,8 +101,8 @@
   "buffer_font_size": 17.0,
   "theme": {
     "mode": "dark",
-    "light": "Zed Legacy: Ayu Light",
-    "dark": "Min Dark (Solid)"
+    "light": "Min Light (Blurred)",
+    "dark": "Min Dark (Blurred)"
   },
   "lsp_document_colors": "background"
 }
