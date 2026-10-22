@@ -13,11 +13,17 @@ return {
     "folke/tokyonight.nvim",
     opts = {
       style = "night",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
     priority = 1000,
   },
   {
     "ellisonleao/gruvbox.nvim",
+    opts = { transparent_mode = true },
     priority = 1000,
   },
   {
@@ -25,6 +31,10 @@ return {
     name = "catppuccin",
     opts = {
       flavour = "mocha",
+      transparent_background = true,
+      float = {
+        transparent = true,
+      },
     },
     priority = 1000,
   },
@@ -34,6 +44,9 @@ return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
+    opts = {
+      enable = { transparency = true },
+    },
     priority = 1000,
   },
   {
@@ -45,15 +58,22 @@ return {
     "sainnhe/everforest",
     lazy = true,
     priority = 1000,
+    init = function()
+      vim.g.everforest_transparent_background = 2
+    end,
   },
   {
     "sainnhe/sonokai",
     lazy = true,
     priority = 1000,
+    init = function()
+      vim.g.sonokai_transparent_background = 2
+    end,
   },
   {
     "Mofiqul/dracula.nvim",
     lazy = true,
+    opts = { transparency = true },
     priority = 1000,
   },
   {
@@ -70,6 +90,7 @@ return {
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
+    opts = { transparent = true },
     priority = 1000,
   },
   {
