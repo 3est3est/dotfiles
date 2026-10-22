@@ -348,7 +348,7 @@ window-rule {
     blur true
     xray false
     }
-  opacity 0.83
+  //opacity 0.80
 }
 
 
