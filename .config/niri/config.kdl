@@ -14,13 +14,9 @@ output "eDP-1" {
 // https://niri-wm.github.io/niri/Configuration:-Introduction
 prefer-no-csd
 environment {
-    // all libedecot hide all any apps
-    //LIBDECOR_PLUGIN "dummy"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
     
-    //GTK and Qt dont make titlebars
-   // GTK_CSD "0"
-  //  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-
     // en bar
     LC_TIME "en_US.UTF-8"
 }
@@ -45,7 +41,7 @@ input {
         }
 
         // Enable numlock on startup, omitting this setting disables it.
-        numlock
+        //numlock
     }
 
     // Next sections include libinput settings.
@@ -671,14 +667,6 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 
-    // Toggle mirror of the laptop screen (eDP-1) to the connected external
-    // output, fullscreen. Press again to return to extend.
-    Mod+Ctrl+M hotkey-overlay-title="Toggle Mirror eDP-1 to External / Extend" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh"; }
-
-    // Restart mirror forcing the GPU zero-copy backend, in case the image freezes.
-   // Mod+Ctrl+M hotkey-overlay-title="Mirror: restart with GPU backend (dmabuf)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh dmabuf"; }
-    // Restart mirror forcing the CPU backend (last resort if dmabuf fails).
-   // Mod+Alt+M hotkey-overlay-title="Mirror: restart with CPU backend (shm, fallback)" { spawn-sh "/home/naruebet/.local/bin/niri-mirror-toggle.sh shm"; }
 }
 
 include "noctalia-user.kdl"

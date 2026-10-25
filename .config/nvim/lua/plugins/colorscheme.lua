@@ -4,7 +4,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "solarized-osaka",
+      colorscheme = "tokyonight-moon",
     },
   },
 
@@ -51,19 +51,11 @@ return {
     priority = 1000,
   },
   {
-    "rebelot/kanagawa.nvim",
-  },
-  {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
       enable = { transparency = true },
     },
-    priority = 1000,
-  },
-  {
-    "shaunsingh/nord.nvim",
-    lazy = true,
     priority = 1000,
   },
   {
@@ -87,38 +79,5 @@ return {
     lazy = true,
     opts = { transparency = true },
     priority = 1000,
-  },
-  {
-    "nyoom-engineering/oxocarbon.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "bluz71/vim-moonfly-colors",
-    name = "moonfly",
-    lazy = false,
-    priority = 1000,
-  },
-  {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    opts = { transparent = true },
-    priority = 1000,
-  },
-  {
-    "marekh19/meowsoot.nvim",
-    lazy = false,
-    priority = 1000,
-  },
-  {
-    "embark-theme/vim",
-    lazy = false,
-    priority = 1000,
-  },
-  {
-    "HoNamDuong/hybrid.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
   },
 }

@@ -102,7 +102,7 @@
   "theme": {
     "mode": "dark",
     "light": "Min Light (Blurred)",
-    "dark": "Min Dark (Blurred)"
+    "dark": "Aura Dark"
   },
   "lsp_document_colors": "background"
 }

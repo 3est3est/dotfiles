@@ -48,7 +48,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
-home_symbol = " ~"
+home_symbol = "~"
 
 [docker_context]
 symbol = " "
@@ -166,7 +166,7 @@ symbol = " "
 symbol = " "
 
 [os.symbols]
-Arch = "󰣇 "
+Arch = " "
 CachyOS = " "
 Fedora = " "
 Linux = " "
@@ -261,7 +261,6 @@ show_always = true
 style_user = "purple bold"
 style_root = "red bold"
 
-
 [character]
-success_symbol = "[>](bold purple)[>](bold cyan)"
+success_symbol = "[](bold purple)[](bold cyan)"
 error_symbol = "[x](bold yellow)[x](bold bright-red)"
