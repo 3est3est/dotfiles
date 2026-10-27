@@ -20,7 +20,7 @@
     {
       "key": " {#title}",
       "type": "title",
-      "format": "{#35}{user-name}{#36}@{#35}{host-name}"
+      "format": "{#35}{user-name}{#97}@{#35}{host-name}"
     },
     {
       "key": " {#36}   ",
@@ -36,7 +36,7 @@
       "type": "host",
     },
     {
-      "key": " {#36} 󰏕  ",
+      "key": " {#36} 󰏖  ",
       "type": "packages",
       "format": "{pacman} (pacman), {flatpak-all} (flatpak)"
     },

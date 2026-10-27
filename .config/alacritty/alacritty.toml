@@ -9,7 +9,7 @@ import = [
 opacity = 0.8
 
 [font]
-size = 13
+size = 12
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
@@ -17,7 +17,7 @@ style = "Regular"
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
-style = "Bold"
+style = "Bold" 
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
@@ -30,6 +30,3 @@ style = "Bold Italic"
 [cursor]
 style = {shape = "Block", blinking = "On"}
 
-[terminal.shell]
-program = "/usr/bin/fish"
-args = ["--login"]
