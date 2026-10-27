@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 format = """
- $os$username$hostname$localip$shlvl$singularity$kubernetes$nats$directory$vcsh$fossil_branch$fossil_metrics$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$hg_state$pijul_channel$docker_context$package$bun$c$cmake$cobol$cpp$daml$dart$deno$dotnet$elixir$elm$erlang$fennel$fortran$gleam$golang$gradle$haskell$haxe$helm$java$julia$kotlin$lua$maven$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pulumi$purescript$python$quarto$raku$rlang$red$ruby$rust$scala$solidity$swift$terraform$typst$vlang$vagrant$xmake$zig$buf$guix_shell$nix_shell$conda$pixi$meson$spack$memory_usage$aws$gcloud$openstack$azure$direnv$env_var$mise$crystal$custom$sudo$cmd_duration$jobs$battery$time$status$container$netns$shell
+ $os$username$hostname$localip$shlvl$singularity$kubernetes$nats in $directory$vcsh$fossil_branch$fossil_metrics$git_branch$git_commit$git_state$git_metrics$git_status$hg_branch$hg_state$pijul_channel$docker_context$package$bun$c$cmake$cobol$cpp$daml$dart$deno$dotnet$elixir$elm$erlang$fennel$fortran$gleam$golang$gradle$haskell$haxe$helm$java$julia$kotlin$lua$maven$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pulumi$purescript$python$quarto$raku$rlang$red$ruby$rust$scala$solidity$swift$terraform$typst$vlang$vagrant$xmake$zig$buf$guix_shell$nix_shell$conda$pixi$meson$spack$memory_usage$aws$gcloud$openstack$azure$direnv$env_var$mise$crystal$custom$sudo$cmd_duration$jobs$battery$time$status$container$netns$shell
  $character"""
 add_newline = false
 
@@ -49,8 +49,8 @@ symbol = " "
 [directory]
 read_only = " 󰌾"
 home_symbol = "~"
+style = "green bold"
 truncation_length = 1
-#truncation_symbol = ""
 
 [docker_context]
 symbol = " "
@@ -83,7 +83,7 @@ symbol = "󱇶 "
 symbol = " "
 
 [git_branch]
-style = "green" 
+style = "bold purple" 
 symbol = " " 
 
 [git_commit]
@@ -111,6 +111,8 @@ symbol = " "
 symbol = " "
 
 [hostname]
+ssh_only = false
+format = "[@](bright-white bold)[$hostname](cyan bold)"
 ssh_symbol = " "
 
 [java]
@@ -260,6 +262,7 @@ style = "bright-white bold"
 
 [username]
 show_always = true
+format = "[$user]($style)"
 style_user = "purple bold"
 style_root = "red bold"
 
