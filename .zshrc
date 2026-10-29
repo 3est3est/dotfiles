@@ -1,7 +1,7 @@
 
 # ---------- PATH ----------
-export PATH="$HOME/.local/bin:$PATH"
-[[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
+[[ ":$PATH:" != *":$HOME/.local/bin:"* ]] && export PATH="$HOME/.local/bin:$PATH"
+export BUN_INSTALL="$HOME/.bun"
 
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -19,15 +19,13 @@ setopt AUTO_MENU COMPLETE_IN_WORD
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
-setopt CORRECT
-
 unsetopt BEEP LIST_BEEP
 
 export LESS_TERMCAP_md="$(tput bold 2> /dev/null; tput setaf 2 2> /dev/null)"
 export LESS_TERMCAP_me="$(tput sgr0 2> /dev/null)"
 
 # ---------- ZSH PLUGINS ----------
-# autosuggestions: Fish-like grey suggestion
+# autosuggestions 
 [[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]] \
   && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -50,6 +48,7 @@ fi
   && source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # fzf keybindings + completion (Ctrl+R history, Ctrl+T files, Alt+C cd)
+export FZF_DEFAULT_OPTS="--height 40% --min-height 20+ --bind=ctrl-z:ignore"
 if [[ -d /usr/share/fzf ]]; then
   [[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
   [[ -f /usr/share/fzf/completion.zsh ]] && source /usr/share/fzf/completion.zsh
@@ -59,9 +58,8 @@ alias make="make -j$(nproc)"
 alias ninja="ninja -j$(nproc)"
 alias n="ninja"
 
-alias cleanup='sudo pacman -Rsn $(pacman -Qtdq)'
+alias cleanup='pacman -Qtdq | xargs -r sudo pacman -Rsn'
 alias jctl="journalctl -p 3 -xb"
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -97,10 +95,7 @@ alias gsh='git show'
 command -v zoxide &>/dev/null && eval "$(zoxide init zsh --cmd cd)"
 command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 [[ -d "$HOME/.bun/bin" && ":$PATH:" != *":$HOME/.bun/bin:"* ]] && export PATH="$HOME/.bun/bin:$PATH"
-[[ -d "$HOME/.opencode/bin" && ":$PATH:" != *":$HOME/.opencode/bin:"* ]] && export PATH="$HOME/.opencode/bin:$PATH"
 [[ -d "$HOME/.spicetify" && ":$PATH:" != *":$HOME/.spicetify:"* ]] && export PATH="$HOME/.spicetify:$PATH"
 
 eval "$(starship init zsh)"
 
-# Added by Antigravity CLI installer
-export PATH="/home/naruebet/.local/bin:$PATH"

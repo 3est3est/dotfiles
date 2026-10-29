@@ -41,9 +41,6 @@ alias ......='cd ../../../../..'
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-# Recent installed packages
-alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-
 #lazygit-yadm
 alias lyadm="lazygit --git-dir=$HOME/.local/share/yadm/repo.git --work-tree=$HOME"
 
@@ -55,7 +52,6 @@ alias ls="eza --icons --group-directories-first"
 
 # clear && fastfetch 
 alias cff="clear; and fastfetch"
-
 #fastfetch
 alias ff="fastfetch"
 #btop
@@ -68,7 +64,7 @@ alias ninja="ninja -j(nproc)"
 alias n="ninja"
 
 # remove orphan packages
-alias cleanup="sudo pacman -Rsn (pacman -Qtdq)"
+alias cleanup="pacman -Qtdq | xargs -r sudo pacman -Rsn"
 
 # Editor + man pager (bat)
 set -gx EDITOR nvim
@@ -78,19 +74,12 @@ if command -q bat
     set -gx MANROFFOPT -c
 end
 
-#rustc
-fish_add_path ~/.cargo/bin
-
 #spicetify
-fish_add_path /home/naruebet/.spicetify
+fish_add_path "$HOME/.spicetify"
 
 # bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-fish_add_path ~/.bun/bin
-
-# opencode
-fish_add_path /home/naruebet/.opencode/bin
+set -gx BUN_INSTALL "$HOME/.bun"
+fish_add_path "$HOME/.bun/bin"
 
 # Added by Antigravity CLI installer
-set -gx PATH "/home/naruebet/.local/bin" $PATH
+fish_add_path "$HOME/.local/bin"

@@ -59,10 +59,10 @@
   },
   "terminal": {
     "shell": {
-      "program": "zsh"
+      "program": "fish"
     },
     "blinking": "on",
-    "cursor_shape": "bar",
+    "cursor_shape": "block",
     "font_size": 17.0
   },
   "tabs": {
@@ -101,8 +101,8 @@
   "buffer_font_size": 17.0,
   "theme": {
     "mode": "dark",
-    "light": "Min Light (Blurred)",
-    "dark": "Aura Dark"
+    "light": "Catppuccin Latte (Blur)",
+    "dark": "Everforest Dark Hard (material)"
   },
   "lsp_document_colors": "background"
 }

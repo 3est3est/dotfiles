@@ -4,7 +4,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-moon",
+      colorscheme = "everforest",
     },
   },
 
@@ -63,7 +63,10 @@ return {
     lazy = true,
     priority = 1000,
     init = function()
+      vim.g.everforest_background = "hard"
       vim.g.everforest_transparent_background = 2
+      -- ให้ floating windows (รวม terminal ของ snacks) โปร่งใสเหมือนหน้าต่างปกติ
+      vim.g.everforest_float_style = "blend"
     end,
   },
   {
@@ -72,6 +75,7 @@ return {
     priority = 1000,
     init = function()
       vim.g.sonokai_transparent_background = 2
+      vim.g.sonokai_float_style = "blend"
     end,
   },
   {

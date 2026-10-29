@@ -76,7 +76,7 @@
   "terminal.integrated.smoothScrolling": true,
   "notebook.output.scrolling": true,
   "window.zoomLevel": 1,
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "editor.smoothScrolling": true,
   "workbench.list.horizontalScrolling": true,
   "terminal.integrated.tabs.defaultIcon": "console",
@@ -89,5 +89,6 @@
   "window.menuBarVisibility": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Fleet Dark",
+  "workbench.colorTheme": "Fleet",
+  "dart.flutterSdkPath": "/home/naruebet/Development/flutter",
 }
