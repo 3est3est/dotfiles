@@ -20,7 +20,7 @@
     {
       "key": " {#title}",
       "type": "title",
-      "format": "{#35}{user-name}{#97}@{#35}{host-name}"
+      "format": "{#35}{user-name}{#37}@{#35}{host-name}"
     },
     {
       "key": " {#36}   ",

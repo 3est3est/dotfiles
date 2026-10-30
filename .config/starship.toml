@@ -112,7 +112,7 @@ symbol = " "
 
 [hostname]
 ssh_only = false
-format = "[@](bright-white bold)[$hostname](cyan bold)"
+format = "[@](white bold)[$hostname](cyan bold)"
 ssh_symbol = " "
 
 [java]
@@ -258,7 +258,7 @@ symbol = " "
 
 [os]
 disabled = false
-style = "bright-white bold"
+style = "white bold"
 
 [username]
 show_always = true
