@@ -76,21 +76,7 @@ alias yz="yazi"
 alias ls="eza --icons --group-directories-first"
 
 alias lg="lazygit"
-alias gd='git diff'
-alias ga='git add .'
-alias gc='git commit -am'
-alias gl='git log'
-alias gs='git status'
-alias gst='git stash'
-alias gsp='git stash pop'
-alias gp='git push'
-alias gpl='git pull'
-alias gsw='git switch'
-alias gsm='git switch main'
-alias gb='git branch'
-alias gbd='git branch -d'
-alias gco='git checkout'
-alias gsh='git show'
+
 
 command -v zoxide &>/dev/null && eval "$(zoxide init zsh --cmd cd)"
 command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
