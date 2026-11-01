@@ -249,7 +249,7 @@ layout {
     struts {
         // left 64
         // right 64
-        top -10
+        top -9
         // bottom 64
     }
 }
@@ -381,7 +381,7 @@ overview {
   workspace-shadow {
     on
     }
-  zoom 0.60
+  zoom 0.6
 }
 
 
@@ -666,7 +666,6 @@ binds {
      // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
-
 }
 
 include "noctalia-user.kdl"
