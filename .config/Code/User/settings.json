@@ -65,12 +65,6 @@
   "terminal.integrated.cursorBlinking": true,
   "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
-  "terminal.integrated.commandsToSkipShell": [
-    "kilo-code.new.agentManagerOpen",
-    "kilo-code.new.agentManager.showTerminal",
-    "kilo-code.new.agentManager.previousTerminal",
-    "kilo-code.new.agentManager.nextTerminal"
-  ],
   "workbench.browser.showInTitleBar": true,
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
@@ -84,11 +78,13 @@
   "window.menuStyle": "native",
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "window.customTitleBarVisibility": "never",
   "window.titleBarStyle": "native",
   "window.menuBarVisibility": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.colorTheme": "Everforest Pro Dark Vibrant",
   "dart.flutterSdkPath": "/home/naruebet/Development/flutter",
+  "dart.flutterCreatePlatforms": [
+    "android",
+  ],
+  "workbench.colorTheme": "Fleet",
 }
