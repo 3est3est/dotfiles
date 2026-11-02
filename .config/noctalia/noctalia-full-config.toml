@@ -33,7 +33,7 @@ order = [ "default" ]
     capsule_padding = 6.0
     capsule_radius = 8.0
     capsule_thickness = 0.75999999046325684
-    center = [ "clock", "date", "weather" ]
+    center = [ "group:g1", "date", "weather" ]
     compositor_blur = false
     concave_edge_corners = true
     contact_shadow = false
@@ -41,7 +41,7 @@ order = [ "default" ]
     end = [
         "audio_visualizer",
         "tray",
-        "group:g3",
+        "notifications",
         "clipboard",
         "network",
         "bluetooth",
@@ -81,18 +81,6 @@ order = [ "default" ]
         click_through = false
 
         [[bar.default.capsule_group]]
-        accordion = false
-        accordion_direction = "end"
-        border_width = 1.0
-        enabled = true
-        fill = "shadow"
-        id = "g3"
-        members = [ "notifications" ]
-        opacity = 1.0
-        padding = 6.0
-        radius = 10.0
-
-        [[bar.default.capsule_group]]
         accordion = true
         accordion_direction = "end"
         border_width = 1.0
@@ -103,6 +91,19 @@ order = [ "default" ]
         opacity = 1.0
         padding = 6.0
         radius = 8.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "shadow"
+        id = "g1"
+        members = [ "clock_icon", "clock" ]
+        opacity = 0.89999997615814209
+        padding = 6.0
+        radius = 8.0
+        widget_spacing = 4
 
 [battery]
 warning_threshold = 10
@@ -809,11 +810,11 @@ pure_black_dark = false
 shell_mode = "follow"
 source = "wallpaper"
 sync_color_scheme = true
-wallpaper_scheme = "m3-tonal-spot"
+wallpaper_scheme = "m3-rainbow"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "cava", "gtk3", "gtk4", "niri" ]
-    community_ids = [ "opencode", "discord", "micro", "obsidian", "zed", "papirus-icons", "whitesur-icons", "fzf", "yazi" ]
+    community_ids = [ "opencode", "discord", "micro", "obsidian", "zed", "papirus-icons", "fzf", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -838,7 +839,7 @@ transition_on_startup = false
     recursive = false
 
 [weather]
-effects = false
+effects = true
 enabled = true
 refresh_minutes = 30
 unit = "metric"
@@ -865,8 +866,12 @@ glyph = "clipboard-smile"
 type = "clipboard"
 
 [widget.clock]
-color = "primary"
+color = "on_surface"
 type = "clock"
+
+[widget.clock_icon]
+glyph = "clock"
+type = "custom_button"
 
 [widget.cpu]
 stat = "cpu_usage"
