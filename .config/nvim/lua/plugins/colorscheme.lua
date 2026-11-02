@@ -65,7 +65,6 @@ return {
     init = function()
       vim.g.everforest_background = "hard"
       vim.g.everforest_transparent_background = 2
-      -- ให้ floating windows (รวม terminal ของ snacks) โปร่งใสเหมือนหน้าต่างปกติ
       vim.g.everforest_float_style = "blend"
     end,
   },
