@@ -2,3 +2,6 @@
 // Shell (Noctalia) 
 spawn-sh-at-startup "env LC_TIME=en_US.UTF-8 noctalia"
 
+// Polkit authentication agent
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+
