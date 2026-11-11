@@ -85,3 +85,6 @@ command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 
 eval "$(starship init zsh)"
 
+# Suppress the Java 25 restricted-native-access warning from Gradle's launcher.
+export GRADLE_OPTS="--enable-native-access=ALL-UNNAMED"
+
