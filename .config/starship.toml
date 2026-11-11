@@ -110,11 +110,6 @@ symbol = " "
 [hg_branch]
 symbol = " "
 
-[hostname]
-ssh_only = false
-format = "[@](white bold)[$hostname](cyan bold)"
-ssh_symbol = " "
-
 [java]
 symbol = " "
 
@@ -265,6 +260,11 @@ show_always = true
 format = "[$user]($style)"
 style_user = "purple bold"
 style_root = "red bold"
+
+[hostname]
+ssh_only = false
+format = "[@](white bold)[$hostname](cyan bold)"
+ssh_symbol = " "
 
 [character]
 success_symbol = "[](bold purple)[](bold cyan)"
