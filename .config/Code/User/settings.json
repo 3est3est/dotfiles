@@ -2,7 +2,6 @@
 {
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.guides.bracketPairs": true,
   "explorer.compactFolders": false,
   "editor.fontLigatures": true,
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Iosevka', 'Menlo', Consolas, Courier New, spacemono",
@@ -76,15 +75,28 @@
   "terminal.integrated.tabs.defaultIcon": "console",
   "terminal.external.linuxExec": "kitty",
   "window.menuStyle": "native",
-  "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "dart.flutterSdkPath": "/home/naruebet/Development/flutter",
   "dart.flutterCreatePlatforms": [
-    "android",
+    "android"
   ],
+  "editor.guides.bracketPairs": true,
+  "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+  "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "editor.guides.highlightActiveBracketPair": false,
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "hidden",
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "native",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "dart": false
+  },
   "workbench.colorTheme": "Fleet",
 }
