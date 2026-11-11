@@ -68,3 +68,6 @@ fish_add_path "$HOME/.bun/bin"
 
 # Added by Antigravity CLI installer
 fish_add_path "$HOME/.local/bin"
+
+# Suppress the Java 25 restricted-native-access warning from Gradle's launcher.
+set -gx GRADLE_OPTS --enable-native-access=ALL-UNNAMED
