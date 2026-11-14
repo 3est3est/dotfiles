@@ -76,7 +76,7 @@ alias yz="yazi"
 alias ls="eza --icons --group-directories-first"
 
 alias lg="lazygit"
-
+alias lzd="lazydocker"
 
 command -v zoxide &>/dev/null && eval "$(zoxide init zsh --cmd cd)"
 command -v direnv &>/dev/null && eval "$(direnv hook zsh)"

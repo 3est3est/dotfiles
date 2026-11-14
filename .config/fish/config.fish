@@ -14,6 +14,7 @@ if status is-interactive
 
     # Abbrs
     abbr lg lazygit
+    abbr lzd lazydocker
 end
 
 # Common use
