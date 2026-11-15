@@ -1,6 +1,6 @@
 [accessibility]
 high_contrast = false
-ui_scale = 1.25
+ui_scale = 1.2500000111758709
 
 [audio]
 enable_notification_sounds = true
@@ -29,9 +29,9 @@ order = [ "default" ]
     capsule = true
     capsule_border_width = 1.0
     capsule_fill = "shadow"
-    capsule_opacity = 0.89999997615814209
+    capsule_opacity = 0.89999997988343239
     capsule_padding = 6.0
-    capsule_radius = 8.0
+    capsule_radius = 8
     capsule_thickness = 0.75999999046325684
     center = [ "group:g1", "date", "weather" ]
     compositor_blur = false
@@ -133,7 +133,6 @@ refresh_minutes = 15
     use_event_reminders = true
 
 [control_center]
-
 hidden_tabs = []
 show_avatar_border = true
 show_session_button = true
@@ -184,7 +183,7 @@ active_monitor_only = false
 active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
-background_opacity = 0.89999997615814209
+background_opacity = 0.89999997988343239
 border = "outline_variant"
 border_width = 0.0
 compositor_blur = true
@@ -212,7 +211,6 @@ pinned = [
     "dev.zed.Zed",
     "com.microsoft.VSCode",
     "discord",
-    "steam",
     "spotify",
     "org.bleachbit.BleachBit",
     "obsidian",
@@ -333,7 +331,7 @@ lock_before_suspend = true
 monitors = []
 tint_intensity = 0.30000001192092896
 transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
-transition_duration = 1000.0
+transition_duration = 1000
 wallpaper = ""
 
 [lockscreen_widgets]
@@ -476,7 +474,7 @@ show_app_name = true
 width = 360
 
 [osd]
-background_opacity = 0.89999997615814209
+background_opacity = 0.89999997988343239
 border = true
 border_color = "outline_variant"
 border_width = 1.0
@@ -518,7 +516,7 @@ controls_placement = "floating"
 
 [plugins]
 auto_update = "all"
-enabled = [ "elijaharch/wl-screen-mirror", "kenn/keybind-cheatsheet" ]
+enabled = [ "kenn/keybind-cheatsheet", "elijaharch/wl-screen-mirror" ]
 
     [[plugins.source]]
     enabled = true
@@ -533,17 +531,17 @@ enabled = [ "elijaharch/wl-screen-mirror", "kenn/keybind-cheatsheet" ]
     name = "community"
 
 [shell]
-circular_avatar = true
-colorize_icons = false
 avatar_path = ""
 button_borders = true
 card_borders = true
+circular_avatar = true
 clipboard_auto_paste = "auto"
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
 clipboard_history_max_entries = 100
 clipboard_image_action_command = ""
 clipboard_keep_from_closed_apps = true
+colorize_icons = false
 corner_radius_scale = 1.0
 date_format = "%A, %x"
 disable_mipmaps = false
@@ -556,7 +554,7 @@ niri_overview_close_on_launch_enabled = false
 niri_overview_type_to_launch_enabled = false
 offline_mode = false
 password_style = "random"
-polkit_agent = true
+polkit_agent = false
 popup_borders = true
 popup_shadows = true
 readline_shortcuts = false
@@ -648,7 +646,7 @@ umbriel_overview_type_to_launch_enabled = false
     session_placement = "floating"
     session_position = "center"
     shadow = true
-    transparency_mode = "glass"
+    transparency_mode = "soft"
     wallpaper_placement = "floating"
     wallpaper_position = "auto"
     wallpaper_show_names = true
@@ -750,7 +748,7 @@ umbriel_overview_type_to_launch_enabled = false
 
     [shell.shadow]
     alpha = 0.55000001192092896
-    direction = "down"
+    direction = "center"
 
     [shell.window_switcher]
     current_workspace_only = false
@@ -803,11 +801,11 @@ swap_pct_activity_threshold = 20.0
 swap_pct_critical_threshold = 80.0
 
 [theme]
-builtin = "Ayu"
+builtin = "Catppuccin"
 community_palette = "Solarized Osaka"
 custom_palette = "wallhaven-7j1o3v-rb"
 mode = "dark"
-pure_black_dark = false
+pure_black_dark = true
 shell_mode = "follow"
 source = "wallpaper"
 sync_color_scheme = true
@@ -838,6 +836,18 @@ transition_on_startup = false
     order = "random"
     pause_on_fullscreen = false
     recursive = false
+
+    [wallpaper.default]
+    path = "/home/naruebet/Pictures/Wallpapers/wallhaven-7j1o3v.jpg"
+
+    [wallpaper.last]
+    path = "/home/naruebet/Pictures/Wallpapers/wallhaven-7j1o3v.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/naruebet/Pictures/Wallpapers/car-wreck.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/naruebet/Pictures/Wallpapers/wallhaven-7j1o3v.jpg"
 
 [weather]
 effects = true
@@ -947,6 +957,7 @@ type = "sysmon"
 visualization = "none"
 
 [widget.volume]
+mute_color = "primary"
 show_label = false
 type = "volume"
 
