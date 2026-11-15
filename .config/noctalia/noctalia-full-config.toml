@@ -12,7 +12,7 @@ enable_sounds = true
 enable_volume_sounds = true
 sound_theme = "freedesktop"
 sound_volume = 1.0
-spectrum_frame_rate = 60
+spectrum_frame_rate = 120
 
 [backdrop]
 blur_intensity = 0.5
@@ -46,10 +46,8 @@ order = [ "default" ]
         "tray",
         "notifications",
         "clipboard",
-        "network",
-        "bluetooth",
-        "volume",
-        "brightness",
+        "group:g1",
+        "group:g3",
         "battery",
         "keyboard_layout",
         "session"
@@ -103,6 +101,30 @@ order = [ "default" ]
         fill = "shadow"
         id = "g2"
         members = [ "clock_icon", "clock", "dots_icons", "date" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "shadow"
+        id = "g1"
+        members = [ "network", "bluetooth" ]
+        opacity = 1.0
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "shadow"
+        id = "g3"
+        members = [ "volume", "brightness" ]
         opacity = 1.0
         padding = 6.0
         radius = 8.0
@@ -344,7 +366,7 @@ lock_before_suspend = true
 monitors = []
 tint_color = "surface"
 tint_intensity = 0.30000001192092896
-transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
+transition = [ "crt", "diamond", "disc", "fade", "golden", "honeycomb", "pixel", "stripes", "vortex", "wipe", "zoom" ]
 transition_duration = 1000.0
 wallpaper = ""
 
@@ -492,7 +514,7 @@ show_progress_bar = true
 width = 360
 
 [osd]
-background_opacity = 0.89999997615814209
+background_opacity = 0.79999995231628418
 border = true
 border_color = "outline_variant"
 border_width = 1.0
@@ -666,7 +688,7 @@ umbriel_overview_type_to_launch_enabled = false
     launcher_position = "center"
     list_item_background = false
     open_near_click_clipboard = false
-    open_near_click_control_center = false
+    open_near_click_control_center = true
     open_near_click_launcher = false
     open_near_click_session = false
     open_near_click_wallpaper = false
@@ -859,7 +881,7 @@ fill_color = ""
 fill_mode = "crop"
 per_monitor_directories = false
 sync_transitions = true
-transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
+transition = [ "crt", "diamond", "disc", "fade", "golden", "honeycomb", "melt", "pixel", "stripes", "vortex", "wipe", "zoom" ]
 transition_duration = 1500.0
 transition_on_startup = false
 
@@ -890,11 +912,11 @@ show_when_idle = false
 type = "audio_visualizer"
 
 [widget.brightness]
-show_label = false
+show_label = true
 type = "brightness"
 
 [widget.clipboard]
-glyph = "clipboard-smile"
+glyph = "clipboard-text"
 type = "clipboard"
 
 [widget.clock]
@@ -912,13 +934,16 @@ visualization = "none"
 
 [widget.date]
 anchor = false
+color = "on_surface"
 format = "{:%a %d %b}"
 type = "clock"
 
 [widget.dots_icons]
-color = "primary"
+color = "on_surface"
+custom_label = ""
 glyph = ""
-label = ""
+icon_color = "tertiary"
+label = ""
 type = "custom_button"
 
 [widget.input_volume]
@@ -979,6 +1004,7 @@ interactive = false
 type = "spacer"
 
 [widget.sysmon]
+stat = "disk_used"
 type = "sysmon"
 visualization = "none"
 
@@ -989,9 +1015,14 @@ visualization = "none"
 
 [widget.volume]
 mute_color = "primary"
-show_label = false
+show_label = true
 type = "volume"
 
 [widget.weather]
+color = "on_surface"
 show_condition = true
 type = "weather"
+
+[widget.workspaces]
+pill_scale = 0.84999999999999998
+type = "workspaces"
